@@ -1,0 +1,168 @@
+.main-home {
+  width: 100%;
+  height: 100%;
+  background: #f8f8f8;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.slides {
+  width: 400%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  height: 90vh;
+  display: flex;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  position: relative;
+  transition: 1s ease;
+  background: black;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.layout-preto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.75) 5%,
+    rgba(0, 0, 0, 0.5) 10%,
+    rgba(0, 0, 0, 0.25) 15%,
+    rgba(0, 0, 0, 0) 25%
+  );
+}
+
+.manual-navigation {
+  position: absolute;
+  width: 40.53%;
+  margin-top: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+.navigation-auto {
+  position: absolute;
+  width: 40.53%;
+  margin-top: 20vw;
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+}
+
+.manual-btn:hover {
+  background: white;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+#radio4:checked ~ .first {
+  margin-left: -75%;
+}
+.manual-btn {
+  border: 2px white solid;
+  padding: 0.4vw;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto div {
+  border: 2px solid rgb(92, 149, 255);
+  padding: 0.4vw;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background: white;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background: white;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background: white;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background: white;
+}
+
+.seta-direita-slide {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  top: 73%;
+  border-radius: 50%;
+  right: 30vw;
+  translate: (-50%, -50%);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.seta-direita-slide:hover {
+  transform: scale(1.1);
+}
+
+.seta-esquerda-slide:hover {
+  transform: scale(1.1);
+}
+
+.seta-esquerda-slide i {
+  color: white;
+  font-size: 2vw;
+}
+.seta-direita-slide i {
+  color: white;
+  font-size: 2vw;
+}
+
+.seta-esquerda-slide {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  transition: 0.3s ease;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  top: 73%;
+  left: 30vw;
+  translate: (-50%, -50%);
+  cursor: pointer;
+}
