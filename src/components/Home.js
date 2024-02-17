@@ -121,15 +121,20 @@ function Home() {
       <div className="section-2">
             <div className="section-2-title">
               <h1>
-
+              Chalé Vale Florido - Seu Refúgio para Momentos Especiais em Embu Guaçu, São Paulo
               </h1>
               <p>
-
+              Descubra o Encanto do Chalé Vale Florido: Um Espaço Único para Eventos e Lazer
               </p>
             </div>
             <div className="section-2-imgs">
-            <img>
-            </img>
+    <div className="section-text"> 
+    <h1>
+      
+    </h1>
+         <img>
+         </img>
+    </div>
             </div>
             <div className="section-2-text">
             <p>
