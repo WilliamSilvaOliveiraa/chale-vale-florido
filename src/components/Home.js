@@ -1,6 +1,6 @@
 import "./Home.css";
 import React, { useState, useEffect, useRef } from "react";
-import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+import { FaChevronRight , FaChevronLeft  } from "react-icons/fa";
 import slide1 from "../imgs/slide1.jpeg";
 import slide2 from "../imgs/slide2.jpeg";
 import slide3 from "../imgs/slide3.jpeg";
@@ -42,10 +42,10 @@ function Home() {
       <div className="slider">
         <div className="slides">
           <div className="seta-direita-slide" onClick={nextSlide}>
-            <FaAngleRight />
+            <FaChevronRight  className="seta-unica"/>
           </div>
           <div className="seta-esquerda-slide" onClick={prevSlide}>
-            <FaAngleLeft />
+            <FaChevronLeft  className="seta-unica"/>
           </div>
           <input
             type="radio"
@@ -117,6 +117,25 @@ function Home() {
             <label htmlFor="radio4" className="manual-btn"></label>
           </div>
         </div>
+      </div>
+      <div className="section-2">
+            <div className="section-2-title">
+              <h1>
+
+              </h1>
+              <p>
+
+              </p>
+            </div>
+            <div className="section-2-imgs">
+            <img>
+            </img>
+            </div>
+            <div className="section-2-text">
+            <p>
+              
+            </p>
+</div>
       </div>
     </div>
   );

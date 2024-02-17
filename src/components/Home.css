@@ -12,12 +12,14 @@
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4px;
   overflow: hidden;
-  border-radius: 10px;
+  position: relative;
+
 }
 .slides {
   width: 400%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  height: 90vh;
+  height: 100vh;
+
   display: flex;
 }
 
@@ -36,6 +38,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  opacity: 0.8;
 }
 
 .layout-preto {
@@ -57,8 +60,8 @@
 
 .manual-navigation {
   position: absolute;
-  width: 40.53%;
-  margin-top: 20vw;
+  width: 100%;
+  margin-top: 86vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,8 +69,9 @@
 }
 .navigation-auto {
   position: absolute;
-  width: 40.53%;
-  margin-top: 20vw;
+  width: 100%;
+  
+  margin-top: 86vh;
   display: flex;
   justify-content: center;
   gap: 1vw;
@@ -91,7 +95,7 @@
 }
 .manual-btn {
   border: 2px white solid;
-  padding: 0.4vw;
+  padding: 0.3vw;
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
@@ -99,11 +103,11 @@
 
 .navigation-auto div {
   border: 2px solid rgb(92, 149, 255);
-  padding: 0.4vw;
+  padding: 0.3vw;
   border-radius: 10px;
   cursor: pointer;
   transition: 1s;
-}
+} 
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
   background: white;
@@ -127,29 +131,23 @@
   align-items: center;
   justify-content: center;
   z-index: 100;
-  top: 73%;
+  top: 40%;
   border-radius: 50%;
-  right: 30vw;
+  right: 1%;
   translate: (-50%, -50%);
   cursor: pointer;
   transition: 0.3s ease;
 }
 
-.seta-direita-slide:hover {
+.seta-unica:hover {
   transform: scale(1.1);
 }
 
-.seta-esquerda-slide:hover {
-  transform: scale(1.1);
-}
 
-.seta-esquerda-slide i {
+ .seta-unica {
   color: white;
-  font-size: 2vw;
-}
-.seta-direita-slide i {
-  color: white;
-  font-size: 2vw;
+  font-size: 1.5rem;
+  transition: 0.3s ease;
 }
 
 .seta-esquerda-slide {
@@ -161,8 +159,8 @@
   align-items: center;
   justify-content: center;
   z-index: 100;
-  top: 73%;
-  left: 30vw;
+  top: 40%;
+  left: 1%; 
   translate: (-50%, -50%);
   cursor: pointer;
 }
