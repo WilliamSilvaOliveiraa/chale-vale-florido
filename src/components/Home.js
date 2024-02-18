@@ -213,6 +213,50 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className="section-3">
+        <div className="section-3-text">
+          <h1>
+            Escape Romântico - Chalé Completo para Casais de Segunda a
+            Quinta-feira!
+          </h1>
+          <p>
+            Finalmente, uma oportunidade especial para ambos! Aproveite a
+            promoção exclusiva de segunda a quinta-feira e mergulhe em um
+            refúgio romântico no Chalé Completo.
+          </p>
+          <p>
+            Com tudo o que vocês precisam para uma escapada perfeita, nosso
+            chalé oferece um ambiente acolhedor, com sofá confortável, quarto
+            aconchegante, TV para maratonar juntos e uma cozinha completa para
+            preparar suas refeições favoritas. 🍳
+          </p>
+          <p>
+            Além disso, desfrutem de momentos ainda mais aconchegantes junto à
+            lareira. Realizem passeios no jardim, desfrutem de um churrasco no
+            deck privativo e relaxem em uma piscina enorme e climatizada
+            exclusiva para vocês.
+          </p>
+          <p>
+            Quando a noite chegar, a diversão é garantida no rooftop, equipado
+            com mesa de bilhar e espaço para carteado. Aproveitem cada segundo
+            juntos neste espaço exclusivo para o casal! 🎉
+          </p>
+        </div>
+        <div className="section-3-imgs">
+          <div className="section-3-imgs-flex">
+            <img src={slide1} />
+            <img src={slide1} />
+          </div>
+          <div className="section-3-imgs-flex">
+            <img src={slide1} />
+            <img src={slide1} />
+          </div>
+          <div className="section-3-imgs-flex">
+            <img src={slide1} />
+            <img src={slide1} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
