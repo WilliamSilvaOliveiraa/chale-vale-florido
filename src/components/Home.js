@@ -1,6 +1,7 @@
 import "./Home.css";
 import React, { useState, useEffect, useRef } from "react";
-import { FaChevronRight , FaChevronLeft  } from "react-icons/fa";
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+import { FaHouseChimney } from "react-icons/fa6";
 import slide1 from "../imgs/slide1.jpeg";
 import slide2 from "../imgs/slide2.jpeg";
 import slide3 from "../imgs/slide3.jpeg";
@@ -42,10 +43,10 @@ function Home() {
       <div className="slider">
         <div className="slides">
           <div className="seta-direita-slide" onClick={nextSlide}>
-            <FaChevronRight  className="seta-unica"/>
+            <FaChevronRight className="seta-unica" />
           </div>
           <div className="seta-esquerda-slide" onClick={prevSlide}>
-            <FaChevronLeft  className="seta-unica"/>
+            <FaChevronLeft className="seta-unica" />
           </div>
           <input
             type="radio"
@@ -119,23 +120,98 @@ function Home() {
         </div>
       </div>
       <div className="section-2">
-            <div className="section-2-title">
-              <h1>
-
-              </h1>
-              <p>
-
-              </p>
+        <div className="section-2-title">
+          <h1>Chalé Vale Florido</h1>
+          <h2>Seu Refúgio para Momentos Especiais em Embu Guaçu, São Paulo</h2>
+          <p>
+            Descubra o Encanto do Chalé Vale Florido: Um Espaço Único para
+            Eventos e Lazer
+          </p>
+        </div>
+        <div className="section-2-imgs">
+          <div className="img-text-preto">
+            <div className="text-img">
+              <FaHouseChimney className="icone" />
+              <h1> Área Gourmet </h1>
             </div>
-            <div className="section-2-imgs">
-            <img>
-            </img>
+            <img src={slide1}></img>
+          </div>
+          <div className="img-text-preto">
+            <div className="text-img">
+              <FaHouseChimney className="icone" />
+              <h1> Área Gourmet </h1>
             </div>
-            <div className="section-2-text">
+            <img src={slide1}></img>
+          </div>
+          <div className="img-text-preto">
+            <div className="text-img">
+              <FaHouseChimney className="icone" />
+              <h1> Área Gourmet </h1>
+            </div>
+            <img src={slide1}></img>
+          </div>
+          <div className="img-text-preto">
+            <div className="text-img">
+              <FaHouseChimney className="icone" />
+              <h1> Área Gourmet </h1>
+            </div>
+            <img src={slide1}></img>
+          </div>
+        </div>
+        <div className="section-2-text-img">
+          <div className="section-2-text">
             <p>
-              
+              Bem-vindo ao Chalé Vale Florido, localizado em Embu Guaçu, São
+              Paulo, o destino perfeito para tornar seus eventos e momentos de
+              lazer verdadeiramente inesquecíveis.{" "}
             </p>
-</div>
+            <p>
+              Com uma estrutura completa e charmosa, oferecemos um ambiente
+              acolhedor para casamentos, aniversários, formaturas, chás de bebê,
+              chás revelação, confraternizações e muitos outros eventos.{" "}
+            </p>
+            <p>Para o seu lazer, proporcionamos: 🍃 </p>
+            <p>
+              • Piscina Gigantesca com Prainha, Hidromassagem e LED Noturno:
+              Relaxe e divirta-se em nossa ampla piscina, perfeita para momentos
+              de descontração.{" "}
+            </p>
+            <p>
+              • Salão de Jogos: Desfrute de mesa de sinuca, jogos de tabuleiros,
+              dominó e baralho em nosso aconchegante salão de jogos.{" "}
+            </p>
+            <p>
+              • Espaço Gourmet: Explore o prazer da culinária em nosso espaço
+              com churrasqueira, forno a lenha, fogão, forno de pizza italiano,
+              freezer, cervejeira e utensílios completos.{" "}
+            </p>
+            <p>
+              • Rooftop com Vista Deslumbrante: Contemple a paisagem em nosso
+              rooftop, equipado com balanço, banco e bistrôs, proporcionando um
+              ambiente perfeito para relaxar.{" "}
+            </p>
+            <p>
+              • Salão de Festa: Celebre momentos especiais em nosso salão,
+              equipado com mesas e cadeiras para acomodar até 49 pessoas
+              sentadas, além de equipamentos de luzes para animar a pista de
+              dança.{" "}
+            </p>
+            <p>
+              • Chalé Diamante e Chalés Rústicos: Oferecemos opções de
+              acomodação, desde um chalé completo com geladeira, TV, microondas
+              e cama de casal até chalés rústicos, ideais para grupos maiores.{" "}
+            </p>
+            <p>
+              Aqui você encontra todo o seu conforto para se reunir com família
+              e amigos…
+            </p>
+          </div>
+          <div className="section-2-text-img-img">
+            <img src={slide1} />
+            <img src={slide1} />
+            <img src={slide1} />
+          </div>
+        </div>
       </div>
     </div>
   );
