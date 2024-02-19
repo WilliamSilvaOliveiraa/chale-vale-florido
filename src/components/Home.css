@@ -1,9 +1,14 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
 :root {
   --font-text: "Roboto Mono", monospace;
   --font-title: "Rubik", sans-serif;
 }
+=======
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap');
+>>>>>>> 837277ebaa76b4d1df4d1797e3146063978dd896
 
 .main-home {
   width: 100%;
