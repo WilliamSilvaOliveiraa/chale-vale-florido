@@ -1,13 +1,23 @@
 import "./Home.css";
 import React, { useState, useEffect, useRef } from "react";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
+import { FaAngleRight } from "react-icons/fa";
 import { FaHouseChimney } from "react-icons/fa6";
 import slide1 from "../imgs/slide1.jpeg";
 import slide2 from "../imgs/slide2.jpeg";
 import slide3 from "../imgs/slide3.jpeg";
 import slide4 from "../imgs/slide4.jpeg";
+import { IoClose } from "react-icons/io5";
+import home_gallery from "./Home_data";
 
 function Home() {
+  const [model, setModel] = useState(false);
+  const [tempthumb, setTempThumb] = useState("");
+  const getImg = (thumb) => {
+    setTempThumb(thumb);
+    setModel(true);
+  };
+
   const prevSlide = () => {
     const totalSlides = 4;
     setCurrentSlide((prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides);
@@ -254,6 +264,33 @@ function Home() {
           <div className="section-3-imgs-flex">
             <img src={slide1} />
             <img src={slide1} />
+          </div>
+        </div>
+      </div>
+      <div className="section-4">
+        <div className="section-4-title">
+          <h1>Fotos</h1>
+          <p>Fotos P</p>
+        </div>
+        <div className={model ? "model open" : "model"}>
+          <img src={tempthumb} />
+          <IoClose className="icon-svg" onClick={() => setModel(false)} />
+        </div>
+        <div className="section-4-imgs">
+          {home_gallery.map((item, index) => (
+            <div
+              key={item.id}
+              className="pics"
+              onClick={() => getImg(item.thumb)}
+            >
+              <img loading="lazy" src={item.thumb} alt={item.id} />
+            </div>
+          ))}
+        </div>
+        <div className="section-4-absolute">
+          <div className="section-4-button">
+            <h1>Ver Todas</h1>
+            <FaAngleRight />
           </div>
         </div>
       </div>
