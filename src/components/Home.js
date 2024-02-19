@@ -294,6 +294,33 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className="section-5">
+        <div className="section-5-img">
+          <img src={slide1} />
+        </div>
+        <div className="section-5-text">
+          <h2>Modalidades de</h2>
+          <h1>Locação</h1>
+          <p>Temos diversas opções que se encaixam no que você procura</p>
+          <h3>Day Use</h3>
+          <p>
+            Um dia com a gente, com descanso e divesão ao ar livre, em meio à
+            natureza.
+          </p>
+          <p>Nosso Day Use funciona de terça-feira a domingo, das 9h às 17h</p>
+          <p>Faça sua reserva antecipada para garantir sua vaga</p>
+          <p>*O Day Use não dá acesso às acomodações dos quartos/chalés</p>
+          <h3>Finais de Semana e Feriados</h3>
+          <p>
+            Aproveite a experiencia completa que o chalé nomedochalé pode te
+            oferecer com nosso serviço de hospedagem. Seja para um fim de semana
+            romantico ou uma confraternização familiar, somos a opção perfeita.
+          </p>
+          <h3>Eventos Corporativos</h3>
+          <p>Temos um espaço ideal para eventos bla bla bla</p>
+          <div className="section-5-btn">Faça sua reserva</div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,8 +1,15 @@
 import "./App.css";
 import Home from "./components/Home";
+import Footer from "./components/Footer";
 
 function App() {
-  return <Home></Home>;
+  return (
+    <>
+      {" "}
+      <Home></Home>
+      <Footer></Footer>
+    </>
+  );
 }
 
 export default App;
