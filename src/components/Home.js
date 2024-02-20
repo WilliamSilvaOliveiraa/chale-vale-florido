@@ -233,8 +233,12 @@ function Home() {
             </p>
           </div>
           <div className="section-2-text-img-img">
-            <img src={slide1} />
-            <img src={slide1} />
+            <div className="section-2-img-container">
+              <img src={slide1} />
+            </div>
+            <div className="section-2-img-container">
+              <img src={slide1} />
+            </div>
           </div>
         </div>
       </div>
