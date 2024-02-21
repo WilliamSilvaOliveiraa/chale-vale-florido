@@ -243,11 +243,19 @@ function Home() {
         </div>
       </div>
       <div className="section-3">
+      <div className="section-3-background">
+
+     
         <div className="section-3-text">
+          <div className="section-3-title">
           <h1>
-            Escape Romântico - Chalé Completo para Casais de Segunda a
+            Escape Romântico!
+          </h1>
+          <h1>
+       Pacote para Casais de Segunda a
             Quinta-feira!
           </h1>
+          </div>
           <p>
             Finalmente, uma oportunidade especial para ambos! Aproveite a
             promoção exclusiva de segunda a quinta-feira e mergulhe em um
@@ -284,6 +292,7 @@ function Home() {
             <img src={slide1} />
             <img src={slide1} />
           </div>
+        </div>
         </div>
       </div>
       <div className="section-4">
