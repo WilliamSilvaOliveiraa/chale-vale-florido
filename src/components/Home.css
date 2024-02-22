@@ -560,7 +560,7 @@ async;
   left: 14vw;
   bottom: 8vw;
   z-index: 2;
-  border-radius: 50px 10px 50px 10px;
+  border-radius: 10px;
 }
 .section-3-imgs-flex {
   display: flex;
