@@ -245,6 +245,8 @@ function Home() {
 
         <div className="section-3">
           <div className="section-3-text">
+            <div className="shape"></div>
+            <div className="shape1"></div>
             <div className="section-3-title">
               <h1>Escape Romântico!</h1>
               <h1>Pacote para Casais de Segunda a Quinta-feira!</h1>
@@ -268,23 +270,50 @@ function Home() {
             </p>
             <p>
               Quando a noite chegar, a diversão é garantida no rooftop, equipado
-              com mesa de bilhar e espaço para carteado. Aproveitem cada segundo
-              juntos neste espaço exclusivo para o casal! 🎉
+              com mesa de bilhar e espaço para carteado.
+            </p>
+            <p>
+              Aproveitem cada segundo juntos neste espaço exclusivo para o
+              casal! 🎉
             </p>
           </div>
           <div className="section-3-imgs">
-            <img src={slide1} />
-            <img src={slide2} />
-            <img src={slide5} />
-            <img src={slide3} />
-            <img src={slide5} />
-            <img src={slide4} />
-            <img src={slide3} />
-            <img src={slide4} />
-            <img src={slide1} />
-            <img src={slide5} />
-            <img src={slide2} />
-            <img src={slide2} />
+            <div className="section-3-img-container">
+              <img src={slide1} />
+            </div>
+            <div className="section-3-img-container">
+              <img src={slide2} />
+            </div>
+            <div className="section-3-img-container">
+              <img src={slide5} />
+            </div>
+            <div className="section-3-img-container">
+              <img src={slide3} />
+            </div>
+            <div className="section-3-img-container">
+              <img src={slide5} />
+            </div>
+            <div className="section-3-img-container">
+              <img src={slide4} />
+            </div>
+            <div className="section-3-img-container">
+              <img src={slide3} />
+            </div>
+            <div className="section-3-img-container">
+              <img src={slide4} />
+            </div>
+            <div className="section-3-img-container">
+              <img src={slide1} />
+            </div>
+            <div className="section-3-img-container">
+              <img src={slide5} />
+            </div>
+            <div className="section-3-img-container">
+              <img src={slide2} />
+            </div>
+            <div className="section-3-img-container">
+              <img src={slide2} />
+            </div>
           </div>
         </div>
       </div>
