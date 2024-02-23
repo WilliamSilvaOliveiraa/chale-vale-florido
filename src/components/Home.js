@@ -249,7 +249,7 @@ function Home() {
             <div className="shape1"></div>
             <div className="section-3-title">
               <h1>Escape Romântico!</h1>
-              <h1>Pacote para Casais de Segunda a Quinta-feira!</h1>
+              <h2>Pacote para Casais de Segunda a Quinta-feira!</h2>
             </div>
             <p>Finalmente, uma oportunidade especial para ambos!</p>
             <p>
@@ -260,7 +260,7 @@ function Home() {
               Com tudo o que vocês precisam para uma escapada perfeita, nosso
               chalé oferece um ambiente acolhedor, com sofá confortável, quarto
               aconchegante, TV para maratonar juntos e uma cozinha completa para
-              preparar suas refeições favoritas. 🍳
+              preparar suas refeições favoritas.
             </p>
             <p>
               Além disso, desfrutem de momentos ainda mais aconchegantes junto à
@@ -274,7 +274,7 @@ function Home() {
             </p>
             <p>
               Aproveitem cada segundo juntos neste espaço exclusivo para o
-              casal! 🎉
+              casal!
             </p>
           </div>
           <div className="section-3-imgs">

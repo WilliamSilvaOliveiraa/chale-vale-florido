@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Butler1";
+}
+
+:root {
+  --mainColor: #e7dcd2;
+  --mainColorLight: #a78558;
+  --secondaryColor: #50381d;
+  --textColor: #8d674a;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+  margin-bottom: 0;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+nav {
+  height: 100%; /* Ajusta a altura conforme necessário */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav a {
+  margin: 0 1rem;
+  color: var(--textColor);
+  text-decoration: none;
+  transition: 0.5s ease;
+  font-size: 1vw;
+  width: 100%;
+}
+
+nav a:hover {
+  color: var(--secondaryColor);
+}
+
+header .nav-btn {
+  display: block;
+  width: 100%;
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+  visibility: hidden;
+  opacity: 0;
+}
+.logo-container img {
+  height: 50px;
+}
+.logo-container {
+  display: flex;
+  width: 100%;
+}
+nav {
+  height: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-close-btn {
+  display: none;
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--textColor);
+}
+
+@media only screen and (max-width: 1024px) {
+  header .nav-btn {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  nav a {
+    text-align: center;
+    font-size: 3vw;
+  }
+  header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--mainColor);
+    transition: 1s;
+    transform: translateY(-100vh);
+    flex-direction: column-reverse;
+  }
+  header .responsive_nav {
+    transform: none;
+  }
+  .nav-close-btn {
+    display: block;
+    font-size: 3vw;
+  }
+}

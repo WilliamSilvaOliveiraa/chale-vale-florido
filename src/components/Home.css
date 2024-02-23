@@ -5,6 +5,7 @@ async;
   --font-text: "Roboto Mono", monospace;
   --font-title: "Rubik", sans-serif;
 }
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
@@ -17,7 +18,7 @@ async;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 6rem;
+  gap: 5rem;
   padding-bottom: 6rem;
   background: radial-gradient(#f3f3f3 15%, transparent 16%),
     linear-gradient(45deg, transparent 49%, #f3f3f3 49% 51%, transparent 51%),
@@ -80,7 +81,7 @@ async;
 .manual-navigation {
   position: absolute;
   width: 100%;
-  margin-top: 86vh;
+  margin-top: 93vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +91,7 @@ async;
   position: absolute;
   width: 100%;
 
-  margin-top: 86vh;
+  margin-top: 93vh;
   display: flex;
   justify-content: center;
   gap: 1vw;
@@ -144,13 +145,13 @@ async;
 
 .seta-direita-slide {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 3vw;
+  height: 3vw;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 100;
-  top: 40%;
+  top: 45%;
   border-radius: 50%;
   right: 1%;
   translate: (-50%, -50%);
@@ -158,26 +159,26 @@ async;
   transition: 0.3s ease;
 }
 
-.seta-unica:hover {
+.seta-direita-slide:hover,
+.seta-esquerda-slide:hover {
   transform: scale(1.1);
 }
 
 .seta-unica {
   color: white;
-  font-size: 1.5rem;
-  transition: 0.3s ease;
+  font-size: 2.6vw;
 }
 
 .seta-esquerda-slide {
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 3vw;
+  height: 3vw;
   display: flex;
   transition: 0.3s ease;
   align-items: center;
   justify-content: center;
   z-index: 100;
-  top: 40%;
+  top: 45%;
   left: 1%;
   translate: (-50%, -50%);
   cursor: pointer;
@@ -354,12 +355,37 @@ async;
 .section-3-title {
   width: 100%;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
   color: #f86d75;
-  text-transform: uppercase;
-  padding-bottom: 2vw;
+  padding-bottom: 3vw;
+}
+
+.section-3-title h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2vw;
+  text-align: left;
+  color: linear-gradient(
+    90deg,
+    rgba(248, 109, 117, 1) 0%,
+    rgba(255, 0, 15, 1) 100%
+  );
+}
+
+.section-3-title h2 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.2vw;
+  text-align: left;
+  color: linear-gradient(
+    90deg,
+    rgba(248, 109, 117, 1) 0%,
+    rgba(255, 0, 15, 1) 100%
+  );
 }
 
 .section-2-text h4 {
@@ -459,7 +485,7 @@ async;
   z-index: 1;
   position: absolute;
   top: -2vw;
-  filter: blur(90px);
+  filter: blur(120px);
   left: -1vw;
 }
 
@@ -473,7 +499,7 @@ async;
     rgba(255, 27, 40, 1) 0%,
     rgba(248, 109, 117, 1) 100%
   );
-  filter: blur(60px);
+  filter: blur(90px);
   opacity: 0.2;
   z-index: 1;
   position: absolute;
@@ -502,7 +528,7 @@ async;
   -moz-column-width: 33%;
   column-width: 20%;
   width: 40%;
-  left: 20vw;
+  left: 19vw;
   overflow: hidden;
 }
 
@@ -528,20 +554,13 @@ async;
   filter: brightness(100%);
 }
 
-.section-3-text h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.4vw;
-  text-align: left;
-  font-weight: bold;
-  width: 100%;
-  position: relative;
-}
 .section-3-text p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
   font-size: 1vw;
   text-align: left;
   width: 100%;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
   z-index: 2;
 }
 
@@ -557,7 +576,7 @@ async;
   padding: 3%;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: absolute;
-  left: 14vw;
+  left: 13vw;
   bottom: 8vw;
   z-index: 2;
   border-radius: 10px;
@@ -683,7 +702,7 @@ async;
 .section-4-button h1 {
   font-family: "Inter", sans-serif;
   font-weight: 500;
-  font-size: 1.2rem;
+  font-size: 1.45vw;
   right: 0;
   padding: 2%;
   border-radius: 10px;
@@ -804,4 +823,29 @@ async;
 .section-5-btn:hover {
   background: white;
   color: #bb6b24;
+}
+
+.section-4-title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 3vw;
+}
+
+.section-4-title h1 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2vw;
+  margin-bottom: 0.5vw;
+}
+
+.section-4-title p {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1vw;
 }
