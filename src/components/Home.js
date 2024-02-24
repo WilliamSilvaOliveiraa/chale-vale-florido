@@ -262,6 +262,9 @@ function Home() {
               <div className="section-3-img-container" id="image4">
                 <img src={slide6} />
               </div>
+              <div className="section-3-img-container" id="image4">
+                <img src={slide6} />
+              </div>
             </div>
           </div>
           <div className="section-3-text">
