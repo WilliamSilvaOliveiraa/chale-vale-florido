@@ -134,7 +134,8 @@ function Home() {
       </div>
       <div className="section-2">
         <div className="section-2-title">
-          <h1>Chalé Vale Florido</h1>
+          <h1 className="texto-com-sombra-externa">Chalé Vale Florido</h1>
+
           <h2>Seu Refúgio para Momentos Especiais em Embu Guaçu, São Paulo</h2>
         </div>
         <div className="section-2-imgs">
@@ -143,8 +144,8 @@ function Home() {
               <FaHouseChimney className="icone" />
               <h1> Piscina </h1>
               <p>
-                Texto Generico sobre o espaço gourmet bla bla bla bla Texto
-                Generico sobre o espaço gourmet bla bla bla bla
+                Maravilhosa piscina gigantesca equipada com prainha,
+                hidromassagem relaxante e iluminação em LED!
               </p>{" "}
             </div>
             <div className="layout-preto-texto"></div>
@@ -153,10 +154,11 @@ function Home() {
           <div className="img-text-preto">
             <div className="text-img">
               <FaHouseChimney className="icone" />
-              <h1> Espaço Gourmet </h1>
+              <h1 id="espaço-gourmet"> Espaço Gourmet </h1>
               <p>
-                Texto Generico sobre o espaço gourmet bla bla bla bla Texto
-                Generico sobre o espaço gourmet bla bla bla bla
+                Espaço gourmet completo para experiências culinárias premium,
+                com churrasqueira, forno a lenha, fogão, forno de pizza
+                italiano, freezer, cervejeira e utensílios variados.
               </p>{" "}
             </div>
             <div className="layout-preto-texto"></div>
@@ -168,8 +170,8 @@ function Home() {
               <FaHouseChimney className="icone" />
               <h1> Pet Friendly </h1>
               <p>
-                Texto Generico sobre o espaço gourmet bla bla bla bla Texto
-                Generico sobre o espaço gourmet bla bla bla bla
+                Ambiente acolhedor e pet friendly, onde seu adorável animal de
+                estimação é mais que bem-vindo!
               </p>{" "}
             </div>
             <div className="layout-preto-texto"></div>
@@ -179,10 +181,11 @@ function Home() {
           <div className="img-text-preto">
             <div className="text-img">
               <FaHouseChimney className="icone" />
-              <h1> Área Rooftop </h1>
+              <h1 id="espaço-gourmet"> Área Rooftop </h1>
               <p>
-                Texto Generico sobre o espaço gourmet bla bla bla bla Texto
-                Generico sobre o espaço gourmet bla bla bla bla
+                Rooftop exclusivo com atmosfera descontraída, apresentando um
+                charmoso balanço, banco e seis bistrôs, cada um equipado com
+                três confortáveis cadeiras.
               </p>
             </div>
             <div className="layout-preto-texto"></div>
@@ -190,60 +193,56 @@ function Home() {
             <img src={slide1}></img>
           </div>
         </div>
+
         <div className="section-2-text-img">
           <div className="section-2-text">
-            <h4>Bem-vindo ao Chalé Vale Florido</h4>
-            <p>
+            <h4>Bem-vindo ao Chalé </h4>
+            <h1>Vale Florido</h1>
+            <p id="paragrafo1">
               Localizado em Embu Guaçu, São Paulo, o destino perfeito para
               tornar seus eventos e momentos de lazer verdadeiramente
               inesquecíveis.
             </p>
+            <p id="paragrafo2">Para o seu lazer, proporcionamos: </p>
             <p>
-              Com uma estrutura completa e charmosa, oferecemos um ambiente
-              acolhedor para casamentos, aniversários, formaturas, chás de bebê,
-              chás revelação, confraternizações e muitos outros eventos.{" "}
-            </p>
-            <p>Para o seu lazer, proporcionamos: 🍃 </p>
-            <p>
-              • Piscina com Prainha, Hidromassagem e LED Noturno: Relaxe e
-              divirta-se em nossa ampla piscina, perfeita para momentos de
+              <b>• </b>Piscina com Prainha, Hidromassagem e LED Noturno: Relaxe
+              e divirta-se em nossa ampla piscina, perfeita para momentos de
               descontração.{" "}
             </p>
             <p>
-              • Salão de Jogos: Desfrute de mesa de sinuca, jogos de tabuleiros,
-              dominó e baralho em nosso aconchegante salão de jogos.{" "}
+              <b>• </b>Salão de Jogos: Desfrute de mesa de sinuca, jogos de
+              tabuleiros, dominó e baralho em nosso aconchegante salão de jogos.{" "}
             </p>
             <p>
-              • Espaço Gourmet: Explore o prazer da culinária em nosso espaço
-              com churrasqueira, forno a lenha, fogão, forno de pizza italiano,
-              freezer, cervejeira e utensílios completos.{" "}
+              <b>• </b>Espaço Gourmet: Explore o prazer da culinária em nosso
+              espaço com churrasqueira, forno a lenha, fogão, forno de pizza
+              italiano, freezer, cervejeira e utensílios completos.{" "}
             </p>
             <p>
-              • Rooftop com Vista Deslumbrante: Contemple a paisagem em nosso
-              rooftop, equipado com balanço, banco e bistrôs, proporcionando um
-              ambiente perfeito para relaxar.{" "}
+              <b>• </b>Rooftop com Vista Deslumbrante: Contemple a paisagem em
+              nosso rooftop, equipado com balanço, banco e bistrôs,
+              proporcionando um ambiente perfeito para relaxar.{" "}
             </p>
             <p>
-              • Salão de Festa: Celebre momentos especiais em nosso salão,
-              equipado com mesas e cadeiras para acomodar até 49 pessoas
+              <b>• </b>Salão de Festa: Celebre momentos especiais em nosso
+              salão, equipado com mesas e cadeiras para acomodar até 49 pessoas
               sentadas, além de equipamentos de luzes para animar a pista de
               dança.{" "}
             </p>
             <p>
-              • Chalé Diamante e Chalés Rústicos: Oferecemos opções de
+              <b>• </b>Chalé Diamante e Chalés Rústicos: Oferecemos opções de
               acomodação, desde um chalé completo com geladeira, TV, microondas
               e cama de casal até chalés rústicos, ideais para grupos maiores.{" "}
             </p>
           </div>
-          <div className="section-2-text-img-img">
-            <div className="section-2-img-container">
-              <img src={slide1} />
-            </div>
-            <div className="section-2-img-container">
-              <img src={slide1} />
-            </div>
-          </div>
+          <div
+            className="section-2-text-img-img"
+            style={{ backgroundImage: `url(${slide1})` }}
+          ></div>
         </div>
+      </div>
+      <div className="divisor">
+        <img src={divisor} />
       </div>
       <div className="section-3">
         <div className="section-3-bottom">
@@ -292,11 +291,9 @@ function Home() {
           </div>
         </div>
       </div>
-
       <div className="divisor">
         <img src={divisor} />
       </div>
-
       <div className="section-4">
         <div className="section-4-title">
           <h1>Navegue pelo nosso espaço</h1>
