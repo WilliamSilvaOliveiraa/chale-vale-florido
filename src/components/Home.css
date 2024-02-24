@@ -12,7 +12,7 @@ async;
 
 @font-face {
   font-family: "Geometric706Black";
-  src: url("../fonts/geometric_706_black_bt.ttf") format("truetype");
+  src: url("../fonts/PublicaSansRound-Bd.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -353,7 +353,8 @@ async;
 }
 
 .section-2-text p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
   font-size: 1vw;
   text-align: left;
   width: 100%;
@@ -538,7 +539,13 @@ async;
   font-style: normal;
   font-size: 4vw;
   text-align: left;
-  color: rgba(248, 109, 117, 1);
+  background: linear-gradient(
+    to right,
+    rgb(255, 70, 79),
+    rgba(255, 140, 140, 1)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
 }
 .section-3-text h2 {
   font-family: "Pacifico", cursive;
@@ -547,6 +554,7 @@ async;
   font-size: 2vw;
   text-align: left;
   color: rgba(248, 109, 117, 1);
+  margin-bottom: 3vw;
 }
 
 .section-3-imgs {
@@ -646,8 +654,31 @@ async;
   font-size: 1vw;
   text-align: left;
   width: 100%;
-  margin-bottom: 1vw;
+  margin-bottom: 1.2vw;
   z-index: 2;
+}
+
+.section-3-btn:hover {
+  box-shadow: rgb(255, 70, 79, 0.5) 0px 0px 10px 0px;
+}
+
+.section-3-btn {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  padding: 2% 5%;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  color: white;
+  font-size: 1.5vw;
+  background: linear-gradient(
+    to right,
+    rgb(255, 70, 79),
+    rgba(255, 140, 140, 1)
+  );
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border-radius: 3vw;
 }
 
 .section-3-text {
@@ -655,13 +686,10 @@ async;
   height: 100%;
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: center;
   flex-direction: column;
+  padding: 0 8vw 0 0;
 
-  background: #f8f8f8;
-  padding: 2%;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  overflow: hidden;
   position: relative;
   z-index: 2;
   border-radius: 0;
@@ -687,11 +715,22 @@ async;
   position: relative;
 }
 
+#promotion2 {
+  font-size: 5.8vw;
+  word-spacing: -0.2vw;
+}
+
+#promotion {
+  font-size: 6vw;
+  letter-spacing: -0.2vw;
+  margin-bottom: -2vw;
+  width: 100%;
+}
+
 .pics {
-  -webkit-transition: all 350ms ease;
-  transition: all 350ms ease;
-  cursor: pointer;
-  margin-bottom: 12px;
+  width: 100%;
+  margin-bottom: 10px;
+  break-inside: avoid;
 }
 
 .pics:hover {
@@ -699,16 +738,7 @@ async;
 }
 
 .pics img {
-  width: 100%;
-}
-
-.section-4-imgs {
-  -webkit-column-count: 6;
-  -moz-column-count: 6;
-  column-count: 6;
-  -webkit-column-width: 33%;
-  -moz-column-width: 33%;
-  column-width: 33%;
+  max-width: 100%;
 }
 
 .model {
@@ -758,6 +788,11 @@ async;
 
   color: white;
   cursor: pointer;
+}
+
+.section-4-imgs {
+  width: 100%;
+  columns: 6;
 }
 
 .section-4-absolute {
@@ -933,4 +968,14 @@ async;
   font-weight: 500;
   font-style: normal;
   font-size: 1vw;
+}
+
+.divisor img {
+  width: 100%;
+  object-fit: contain;
+  height: auto;
+}
+
+.divisor {
+  width: 50%;
 }

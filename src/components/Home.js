@@ -11,6 +11,7 @@ import { IoClose } from "react-icons/io5";
 import home_gallery from "./Home_data";
 import slide5 from "../imgs/slide5.png";
 import slide6 from "../imgs/slide6.png";
+import divisor from "../imgs/divisor.png";
 
 function Home() {
   const [model, setModel] = useState(false);
@@ -193,8 +194,8 @@ function Home() {
           <div className="section-2-text">
             <h4>Bem-vindo ao Chalé Vale Florido</h4>
             <p>
-              Localizado em <b>Embu Guaçu, São Paulo</b>,, o destino perfeito
-              para tornar seus eventos e momentos de lazer verdadeiramente
+              Localizado em Embu Guaçu, São Paulo, o destino perfeito para
+              tornar seus eventos e momentos de lazer verdadeiramente
               inesquecíveis.
             </p>
             <p>
@@ -204,32 +205,32 @@ function Home() {
             </p>
             <p>Para o seu lazer, proporcionamos: 🍃 </p>
             <p>
-              <b>• Piscina </b>com Prainha, Hidromassagem e LED Noturno: Relaxe
-              e divirta-se em nossa ampla piscina, perfeita para momentos de
+              • Piscina com Prainha, Hidromassagem e LED Noturno: Relaxe e
+              divirta-se em nossa ampla piscina, perfeita para momentos de
               descontração.{" "}
             </p>
             <p>
-              <b> • Salão de Jogos: </b> Desfrute de mesa de sinuca, jogos de
-              tabuleiros, dominó e baralho em nosso aconchegante salão de jogos.{" "}
+              • Salão de Jogos: Desfrute de mesa de sinuca, jogos de tabuleiros,
+              dominó e baralho em nosso aconchegante salão de jogos.{" "}
             </p>
             <p>
-              <b>• Espaço Gourmet:</b> Explore o prazer da culinária em nosso
-              espaço com churrasqueira, forno a lenha, fogão, forno de pizza
-              italiano, freezer, cervejeira e utensílios completos.{" "}
+              • Espaço Gourmet: Explore o prazer da culinária em nosso espaço
+              com churrasqueira, forno a lenha, fogão, forno de pizza italiano,
+              freezer, cervejeira e utensílios completos.{" "}
             </p>
             <p>
-              <b>• Rooftop</b> com Vista Deslumbrante: Contemple a paisagem em
-              nosso rooftop, equipado com balanço, banco e bistrôs,
-              proporcionando um ambiente perfeito para relaxar.{" "}
+              • Rooftop com Vista Deslumbrante: Contemple a paisagem em nosso
+              rooftop, equipado com balanço, banco e bistrôs, proporcionando um
+              ambiente perfeito para relaxar.{" "}
             </p>
             <p>
-              <b>• Salão de Festa: </b>Celebre momentos especiais em nosso
-              salão, equipado com mesas e cadeiras para acomodar até 49 pessoas
+              • Salão de Festa: Celebre momentos especiais em nosso salão,
+              equipado com mesas e cadeiras para acomodar até 49 pessoas
               sentadas, além de equipamentos de luzes para animar a pista de
               dança.{" "}
             </p>
             <p>
-              <b>• Chalé Diamante e Chalés Rústicos: </b>Oferecemos opções de
+              • Chalé Diamante e Chalés Rústicos: Oferecemos opções de
               acomodação, desde um chalé completo com geladeira, TV, microondas
               e cama de casal até chalés rústicos, ideais para grupos maiores.{" "}
             </p>
@@ -262,42 +263,40 @@ function Home() {
               <div className="section-3-img-container" id="image4">
                 <img src={slide6} />
               </div>
-              <div className="section-3-img-container" id="image4">
-                <img src={slide6} />
-              </div>
             </div>
           </div>
           <div className="section-3-text">
-            <h1>Promoção De Casal!</h1>
-            <h2>Disponível Segunda à Sexta</h2>
-            <p>Finalmente, uma oportunidade especial para ambos!</p>
+            <h1 id="promotion">Promoção</h1>
+            <h1 id="promotion2">De Casal!</h1>
+            <h2>Disponível Segunda à Quinta</h2>
+
             <p>
-              Aproveite a promoção exclusiva de segunda a quinta-feira e
-              mergulhe em um refúgio romântico no Chalé Completo.
+              Aproveite uma promoção exclusiva de segunda a quinta-feira para um
+              refúgio romântico no Chalé Completo, que oferece conforto e
+              comodidades ideais.
             </p>
             <p>
-              Com tudo o que vocês precisam para uma escapada perfeita, nosso
-              chalé oferece um ambiente acolhedor, com sofá confortável, quarto
-              aconchegante, TV para maratonar juntos e uma cozinha completa para
-              preparar suas refeições favoritas.
-            </p>
-            <p>
-              Além disso, desfrutem de momentos ainda mais aconchegantes junto à
-              lareira. Realizem passeios no jardim, desfrutem de um churrasco no
-              deck privativo e relaxem em uma piscina enorme e climatizada
-              exclusiva para vocês.
+              Desfrute de momentos aconchegantes, passeios no jardim, churrascos
+              no deck privativo e relaxe na piscina exclusiva.
             </p>
             <p>
               Quando a noite chegar, a diversão é garantida no rooftop, equipado
               com mesa de bilhar e espaço para carteado.
             </p>
+
             <p>
               Aproveitem cada segundo juntos neste espaço exclusivo para o
               casal!
             </p>
+            <div className="section-3-btn">Tenho Interesse</div>
           </div>
         </div>
       </div>
+
+      <div className="divisor">
+        <img src={divisor} />
+      </div>
+
       <div className="section-4">
         <div className="section-4-title">
           <h1>Navegue pelo nosso espaço</h1>
