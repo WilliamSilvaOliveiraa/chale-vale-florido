@@ -10,6 +10,7 @@ import slide4 from "../imgs/slide4.jpeg";
 import { IoClose } from "react-icons/io5";
 import home_gallery from "./Home_data";
 import slide5 from "../imgs/slide5.png";
+import slide6 from "../imgs/slide6.png";
 
 function Home() {
   const [model, setModel] = useState(false);
@@ -242,15 +243,30 @@ function Home() {
             </div>
           </div>
         </div>
-
-        <div className="section-3">
-          <div className="section-3-text">
-            <div className="shape"></div>
-            <div className="shape1"></div>
-            <div className="section-3-title">
-              <h1>Escape Romântico!</h1>
-              <h2>Pacote para Casais de Segunda a Quinta-feira!</h2>
+      </div>
+      <div className="section-3">
+        <div className="section-3-bottom">
+          <div className="section-3-imgs">
+            <div className="section-3-imgs-top">
+              <div className="section-3-img-container" id="image2">
+                <img src={slide6} />
+              </div>
+              <div className="section-3-img-container" id="image1">
+                <img src={slide6} />
+              </div>
             </div>
+            <div className="section-3-imgs-bottom">
+              <div className="section-3-img-container" id="image3">
+                <img src={slide6} />
+              </div>
+              <div className="section-3-img-container" id="image4">
+                <img src={slide6} />
+              </div>
+            </div>
+          </div>
+          <div className="section-3-text">
+            <h1>Promoção De Casal!</h1>
+            <h2>Disponível Segunda à Sexta</h2>
             <p>Finalmente, uma oportunidade especial para ambos!</p>
             <p>
               Aproveite a promoção exclusiva de segunda a quinta-feira e
@@ -276,44 +292,6 @@ function Home() {
               Aproveitem cada segundo juntos neste espaço exclusivo para o
               casal!
             </p>
-          </div>
-          <div className="section-3-imgs">
-            <div className="section-3-img-container">
-              <img src={slide1} />
-            </div>
-            <div className="section-3-img-container">
-              <img src={slide2} />
-            </div>
-            <div className="section-3-img-container">
-              <img src={slide5} />
-            </div>
-            <div className="section-3-img-container">
-              <img src={slide3} />
-            </div>
-            <div className="section-3-img-container">
-              <img src={slide5} />
-            </div>
-            <div className="section-3-img-container">
-              <img src={slide4} />
-            </div>
-            <div className="section-3-img-container">
-              <img src={slide3} />
-            </div>
-            <div className="section-3-img-container">
-              <img src={slide4} />
-            </div>
-            <div className="section-3-img-container">
-              <img src={slide1} />
-            </div>
-            <div className="section-3-img-container">
-              <img src={slide5} />
-            </div>
-            <div className="section-3-img-container">
-              <img src={slide2} />
-            </div>
-            <div className="section-3-img-container">
-              <img src={slide2} />
-            </div>
           </div>
         </div>
       </div>
