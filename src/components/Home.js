@@ -12,6 +12,7 @@ import home_gallery from "./Home_data";
 import slide5 from "../imgs/slide5.png";
 import slide6 from "../imgs/slide6.png";
 import divisor from "../imgs/divisor.png";
+import logo from "../imgs/logo.png";
 
 function Home() {
   const [model, setModel] = useState(false);
@@ -54,6 +55,9 @@ function Home() {
   return (
     <div className="main-home">
       <div className="slider">
+        <div className="slider-logo">
+          <img src={logo}></img>
+        </div>
         <div className="slides">
           <div className="seta-direita-slide" onClick={nextSlide}>
             <FaChevronRight className="seta-unica" />
@@ -134,7 +138,7 @@ function Home() {
       </div>
       <div className="section-2">
         <div className="section-2-title">
-          <h1 className="texto-com-sombra-externa">Chalé Vale Florido</h1>
+          <h1>Chalé Vale Florido</h1>
 
           <h2>Seu Refúgio para Momentos Especiais em Embu Guaçu, São Paulo</h2>
         </div>
