@@ -374,7 +374,7 @@ function Home() {
           <p>*O Day Use não dá acesso às acomodações dos quartos/chalés</p>
           <h3>Finais de Semana e Feriados</h3>
           <p>
-            Aproveite a experiencia completa que o chalé nomedochalé pode te
+            Aproveite a experiencia completa que o chalé Vale Florido pode te
             oferecer com nosso serviço de hospedagem. Seja para um fim de semana
             romantico ou uma confraternização familiar, somos a opção perfeita.
           </p>
