@@ -14,11 +14,13 @@ import piscina from "../imgs/piscina.jpeg";
 import espaço from "../imgs/espaço.jpeg";
 import imagemfixa from "../imgs/imagemfixa.jpeg";
 import rooftop from "../imgs/rooftop.jpeg";
-import casal1 from "../imgs/casal1.jpg";
-import casal2 from "../imgs/casal2.jpeg";
-import casal3 from "../imgs/casal3.jpeg";
-import casal4 from "../imgs/casal4.jpeg";
+import casal1 from "../imgs/casal1.png";
+import casal2 from "../imgs/casal2.jpg";
+import casal3 from "../imgs/casal3.jpg";
+import casal4 from "../imgs/casal4.jpg";
+import teste from "../imgs/teste.png";
 import locaçao from "../imgs/locaçao.jpeg";
+import pet from "../imgs/pet.jpeg";
 import slide6 from "../imgs/slide6.png";
 import divisor from "../imgs/divisor.png";
 import logo from "../imgs/logo.png";
@@ -204,7 +206,7 @@ function Home() {
             </div>
             <div className="layout-preto-texto"></div>
 
-            <img src={slide1}></img>
+            <img src={pet}></img>
           </div>
           <div className="img-text-preto">
             <div className="text-img">
@@ -265,7 +267,7 @@ function Home() {
           </div>
           <div
             className="section-2-text-img-img"
-            style={{ backgroundImage: `url(${piscina})` }}
+            style={{ backgroundImage: `url(${teste})` }}
           ></div>
         </div>
       </div>
@@ -285,10 +287,10 @@ function Home() {
             </div>
             <div className="section-3-imgs-bottom">
               <div className="section-3-img-container" id="image3">
-                <img src={casal3} />
+                <img src={casal4} />
               </div>
               <div className="section-3-img-container" id="image4">
-                <img src={casal4} />
+                <img src={casal3} />
               </div>
             </div>
           </div>

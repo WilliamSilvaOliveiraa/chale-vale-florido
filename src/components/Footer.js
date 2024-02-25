@@ -27,25 +27,13 @@ function Footer() {
         <div className="footer-links">
           <h2>Rede Sociais</h2>
           <div id="footer_social_media">
-            <a
-              href="https://www.instagram.com/eurogrill_churrasqueiras/"
-              className="footer-link"
-              id="instagram"
-            >
+            <a href="#" className="footer-link" id="instagram">
               <FaInstagram></FaInstagram>
             </a>
-            <a
-              href="https://www.facebook.com/eurogrillchurrasqueiras/"
-              className="footer-link"
-              id="facebook"
-            >
+            <a href="#" className="footer-link" id="facebook">
               <FaFacebookF></FaFacebookF>
             </a>
-            <a
-              href="https://api.whatsapp.com/send?phone=5519992510945&text=Ol%C3%A1,%20tudo%20bem?%20Vim%20atrav%C3%A9s%20do%20website!"
-              className="footer-link"
-              id="whatsapp"
-            >
+            <a href="#" className="footer-link" id="whatsapp">
               <FaWhatsapp> </FaWhatsapp>
             </a>
           </div>
