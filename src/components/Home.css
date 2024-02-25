@@ -26,19 +26,20 @@ async;
   align-items: center;
   flex-direction: column;
   gap: 5rem;
-  padding-bottom: 6rem;
+  padding-bottom: 12vw;
   background: radial-gradient(#f3f3f3 15%, transparent 16%),
     linear-gradient(45deg, transparent 49%, #f3f3f3 49% 51%, transparent 51%),
     linear-gradient(-45deg, transparent 49%, #f3f3f3 49% 51%, transparent 51%);
   background-size: 3em 3em;
   background-color: #f8f8f8;
   opacity: 1;
+  padding-top: 60px;
 }
 
 .slider {
   margin: 0 auto;
   width: 100%;
-  box-shadow: rgba(0, 0, 0, 0.8) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 1) 0px 1px 4px;
   overflow: hidden;
   position: relative;
 }
@@ -50,7 +51,7 @@ async;
 }
 
 .slider-logo {
-  width: 25vw;
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -59,7 +60,7 @@ async;
 }
 
 .slides {
-  width: 400%;
+  width: 500%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   height: 80vh;
 
@@ -81,7 +82,7 @@ async;
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.4;
+  opacity: 0.3;
 }
 
 .layout-preto {
@@ -121,7 +122,7 @@ async;
 }
 
 .manual-btn:hover {
-  background: white;
+  background: rgb(255, 233, 193);
 }
 
 #radio1:checked ~ .first {
@@ -136,8 +137,11 @@ async;
 #radio4:checked ~ .first {
   margin-left: -75%;
 }
+#radio5:checked ~ .first {
+  margin-left: -100%;
+}
 .manual-btn {
-  border: 2px white solid;
+  border: 2px rgb(255, 233, 193) solid;
   padding: 0.3vw;
   border-radius: 10px;
   cursor: pointer;
@@ -153,17 +157,21 @@ async;
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-  background: white;
+  background: rgb(255, 233, 193);
 }
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-  background: white;
+  background: rgb(255, 233, 193);
 }
 #radio3:checked ~ .navigation-auto .auto-btn3 {
-  background: white;
+  background: rgb(255, 233, 193);
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4 {
-  background: white;
+  background: rgb(255, 233, 193);
+}
+
+#radio5:checked ~ .navigation-auto .auto-btn5 {
+  background: rgb(255, 233, 193);
 }
 
 .seta-direita-slide {
@@ -188,7 +196,7 @@ async;
 }
 
 .seta-unica {
-  color: white;
+  color: rgb(255, 233, 193);
   font-size: 2.6vw;
 }
 
@@ -226,7 +234,7 @@ async;
   height: 100%;
   flex-direction: column;
   align-items: center;
-  padding: 0 10%;
+  margin-bottom: 3vw;
   justify-content: center;
   gap: 1vw;
 }
@@ -235,17 +243,27 @@ async;
   font-family: "Geometric706Black", sans-serif;
   font-weight: 800;
   font-size: 5vw;
-  background: linear-gradient(to right, rgb(211, 107, 21), rgb(226, 137, 64));
+  background: linear-gradient(to right, rgb(255, 224, 168), rgb(255, 231, 211));
   -webkit-background-clip: text;
   color: transparent;
   text-align: center;
   filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.3));
 }
+
+#chale {
+  font-size: 10vw;
+  margin-bottom: -3vw;
+}
+
+#chale2 {
+  font-size: 4.8vw;
+}
+
 .section-2-title h2 {
   font-family: "Raleway", sans-serif;
   font-weight: bold;
   font-size: 1.4vw;
-  background: linear-gradient(to right, rgb(173, 85, 12), rgb(136, 66, 8));
+  background: linear-gradient(to right, rgb(255, 237, 223), rgb(255, 237, 223));
   -webkit-background-clip: text;
   color: transparent;
   text-align: center;
@@ -274,6 +292,7 @@ async;
   justify-content: flex-end;
   align-items: flex-end;
   transition: all 0.3 ease;
+  width: 100%;
 }
 
 .img-text-preto:hover img {
@@ -894,7 +913,7 @@ async;
 }
 
 .section-4-button h1 {
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 1.45vw;
   right: 0;
@@ -931,7 +950,13 @@ async;
   align-items: center;
   justify-content: center;
   position: relative;
-  background: #bb6b24;
+  background: rgb(255, 239, 223);
+  background: linear-gradient(
+    270deg,
+    rgb(196, 145, 94) 0%,
+    rgba(187, 107, 36, 1) 100%
+  );
+  margin-top: 3vw;
 }
 
 .section-5-img {
@@ -958,25 +983,27 @@ async;
   color: white;
 
   padding-left: 2vw;
-  padding-right: 4vw;
+  padding-right: 10vw;
 }
 
 .section-5-text h2 {
-  font-family: "Inter", sans-serif;
-  font-weight: 500;
-  font-size: 1.5vw;
+  font-family: "Geometric706Black", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.6vw;
+  margin-bottom: -0.8vw;
 }
 
 .section-5-text h1 {
-  font-family: "Inter", sans-serif;
+  font-family: "Geometric706Black", sans-serif;
   font-weight: 700;
-  font-size: 1.5vw;
+  font-style: normal;
+  font-size: 3vw;
   position: relative;
-  margin-bottom: 1vw;
 }
 
 .section-5-text p {
-  font-family: "Inter", sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 500;
   font-size: 1vw;
 }
@@ -992,11 +1019,12 @@ async;
 }
 
 .section-5-text h3 {
-  font-family: "Inter", sans-serif;
+  font-family: "Geometric706Black", sans-serif;
   font-weight: 600;
-  font-size: 1.5vw;
-  margin-top: 1.5vw;
-  margin-bottom: 0.5vw;
+  font-style: normal;
+  font-size: 1.2vw;
+  margin-top: 2vw;
+  margin-bottom: 0;
 }
 
 .section-5-btn {
@@ -1012,6 +1040,7 @@ async;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 1.2vw;
+  border-radius: 5vw;
 }
 
 .section-5-btn:hover {
