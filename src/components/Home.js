@@ -7,7 +7,7 @@ import slide1 from "../imgs/slide1.jpeg";
 import slide2 from "../imgs/slide2.jpeg";
 import slide3 from "../imgs/slide3.jpeg";
 import slide4 from "../imgs/slide4.jpeg";
-import { IoClose } from "react-icons/io5";
+import { IoClose } from "react-icons/sio5";
 import home_gallery from "./Home_data";
 import slide5 from "../imgs/slide5.jpeg";
 import piscina from "../imgs/piscina.jpeg";
@@ -68,8 +68,8 @@ function Home() {
       <div className="slider">
         <div className="slider-logo">
           <div className="section-2-title">
-            <h1 id="chale">Chalé</h1>
-            <h1 id="chale2"> Vale Florido</h1>
+            <h1 id="chale">Name</h1>
+            <h1 id="chale2"> Sub Name</h1>
           </div>
         </div>
 
@@ -172,10 +172,10 @@ function Home() {
           <div className="img-text-preto">
             <div className="text-img">
               <FaHouseChimney className="icone" />
-              <h1> Piscina </h1>
+              <h1> First Info</h1>
               <p>
-                Maravilhosa piscina gigantesca equipada com prainha,
-                hidromassagem relaxante e iluminação em LED!
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
               </p>{" "}
             </div>
             <div className="layout-preto-texto"></div>
@@ -184,11 +184,10 @@ function Home() {
           <div className="img-text-preto">
             <div className="text-img">
               <FaHouseChimney className="icone" />
-              <h1 id="espaço-gourmet"> Espaço Gourmet </h1>
+              <h1 id=""> Second Info </h1>
               <p>
-                Espaço gourmet completo para experiências culinárias premium,
-                com churrasqueira, forno a lenha, fogão, forno de pizza
-                italiano, freezer, cervejeira e utensílios variados.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
               </p>{" "}
             </div>
             <div className="layout-preto-texto"></div>
@@ -198,10 +197,10 @@ function Home() {
           <div className="img-text-preto">
             <div className="text-img">
               <FaHouseChimney className="icone" />
-              <h1> Pet Friendly </h1>
+              <h1> Third Info </h1>
               <p>
-                Ambiente acolhedor e pet friendly, onde seu adorável animal de
-                estimação é mais que bem-vindo!
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
               </p>{" "}
             </div>
             <div className="layout-preto-texto"></div>
@@ -211,11 +210,10 @@ function Home() {
           <div className="img-text-preto">
             <div className="text-img">
               <FaHouseChimney className="icone" />
-              <h1 id="espaço-gourmet"> Área Rooftop </h1>
+              <h1 id=""> Fourth Info </h1>
               <p>
-                Rooftop exclusivo com atmosfera descontraída, apresentando um
-                charmoso balanço, banco e seis bistrôs, cada um equipado com
-                três confortáveis cadeiras.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+                eiusmod tempor incididunt ut labore et dolore magna.
               </p>
             </div>
             <div className="layout-preto-texto"></div>
@@ -226,43 +224,44 @@ function Home() {
 
         <div className="section-2-text-img">
           <div className="section-2-text">
-            <h4>Bem-vindo ao Chalé </h4>
-            <h1>Vale Florido</h1>
+            <h4>Sub Title </h4>
+            <h1>Main Title</h1>
             <p id="paragrafo1">
-              Localizado em Embu Guaçu, São Paulo, o destino perfeito para
-              tornar seus eventos e momentos de lazer verdadeiramente
-              inesquecíveis.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
-            <p id="paragrafo2">Para o seu lazer, proporcionamos: </p>
-            <p>
-              <b>• </b>Piscina com Prainha, Hidromassagem e LED Noturno: Relaxe
-              e divirta-se em nossa ampla piscina, perfeita para momentos de
-              descontração.{" "}
+            <p id="paragrafo2">
+              Lorem ipsum dolor sit amet, consectetur adipiscing:{" "}
             </p>
             <p>
-              <b>• </b>Salão de Jogos: Desfrute de mesa de sinuca, jogos de
-              tabuleiros, dominó e baralho em nosso aconchegante salão de jogos.{" "}
+              <b>• </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
             </p>
             <p>
-              <b>• </b>Espaço Gourmet: Explore o prazer da culinária em nosso
-              espaço com churrasqueira, forno a lenha, fogão, forno de pizza
-              italiano, freezer, cervejeira e utensílios completos.{" "}
+              <b>• </b>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
             </p>
             <p>
-              <b>• </b>Rooftop com Vista Deslumbrante: Contemple a paisagem em
-              nosso rooftop, equipado com balanço, banco e bistrôs,
-              proporcionando um ambiente perfeito para relaxar.{" "}
+              <b>• </b>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
             </p>
             <p>
-              <b>• </b>Salão de Festa: Celebre momentos especiais em nosso
-              salão, equipado com mesas e cadeiras para acomodar até 49 pessoas
-              sentadas, além de equipamentos de luzes para animar a pista de
-              dança.{" "}
+              <b>• </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
             </p>
             <p>
-              <b>• </b>Chalé Diamante e Chalés Rústicos: Oferecemos opções de
-              acomodação, desde um chalé completo com geladeira, TV, microondas
-              e cama de casal até chalés rústicos, ideais para grupos maiores.{" "}
+              <b>• </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+            </p>
+            <p>
+              <b>• </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
+            </p>
+            <p>
+              <b>• </b>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.{" "}
             </p>
           </div>
           <div
@@ -295,29 +294,27 @@ function Home() {
             </div>
           </div>
           <div className="section-3-text">
-            <h1 id="promotion">Promoção</h1>
-            <h1 id="promotion2">De Casal!</h1>
-            <h2>Disponível Segunda à Quinta</h2>
+            <h1 id="promotion">Promotion</h1>
+            <h1 id="promotion2">Section</h1>
+            <h2>Lorem ipsum dolor sit amet.</h2>
 
             <p>
-              Aproveite uma promoção exclusiva de segunda a quinta-feira para um
-              refúgio romântico no Chalé Completo, que oferece conforto e
-              comodidades ideais.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+              nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat.
             </p>
             <p>
-              Desfrute de momentos aconchegantes, passeios no jardim, churrascos
-              no deck privativo e relaxe na piscina exclusiva.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
             <p>
-              Quando a noite chegar, a diversão é garantida no rooftop, equipado
-              com mesa de bilhar e espaço para carteado.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
 
-            <p>
-              Aproveitem cada segundo juntos neste espaço exclusivo para o
-              casal!
-            </p>
-            <div className="section-3-btn">Tenho Interesse</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <div className="section-3-btn">Lorem ipsum</div>
           </div>
         </div>
       </div>
@@ -326,15 +323,18 @@ function Home() {
       </div>
       <div className="section-4">
         <div className="section-4-title">
-          <h1>Navegue pelo nosso espaço</h1>
+          <h1>Browse our space</h1>
           <p>
-            *Para visualizar melhor as fotos, basta clicar nas imagens para
-            ampliar.
+            *To better view the photos, simply click on the images to enlarge.
           </p>
         </div>
         <div className={model ? "model open" : "model"}>
           <img src={tempthumb} />
           <IoClose className="icon-svg" onClick={() => setModel(false)} />
+          <div className="setas-geral">
+            <FaChevronRight />
+            <FaChevronLeft />
+          </div>
         </div>
         <div className="section-4-imgs">
           {home_gallery.map((item, index) => (
