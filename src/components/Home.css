@@ -33,7 +33,6 @@ async;
   background-size: 3em 3em;
   background-color: #f8f8f8;
   opacity: 1;
-  padding-top: 60px;
 }
 
 .slider {
@@ -62,7 +61,7 @@ async;
 .slides {
   width: 500%;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  height: 80vh;
+  height: 90vh;
 
   display: flex;
 }

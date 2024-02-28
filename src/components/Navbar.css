@@ -8,6 +8,15 @@
   font-style: normal;
 }
 
+.navbar {
+  background: transparent;
+  transition: all 0.5s ease;
+}
+
+.solid-background {
+  background: rgb(151, 36, 166);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -25,12 +34,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0 2rem;
-  background: rgb(20, 20, 20);
-  background: linear-gradient(
-    342deg,
-    rgba(20, 20, 20, 1) 0%,
-    rgba(79, 0, 85, 1) 100%
-  );
+  background: transparent;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
   margin-bottom: 0;
@@ -47,7 +51,7 @@ nav {
 }
 
 nav a {
-  margin: 0 2vw;
+  margin: 0 3vw;
   color: #e4e4e4;
   text-decoration: none;
   transition: 0.5s ease;

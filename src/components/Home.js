@@ -1,4 +1,5 @@
 import "./Home.css";
+
 import React, { useState, useEffect, useRef } from "react";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
