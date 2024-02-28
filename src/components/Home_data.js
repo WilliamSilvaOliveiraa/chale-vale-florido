@@ -1,32 +1,33 @@
-import imagem1 from "../imgs/Home Galeria/imagem1.jpeg";
-import imagem2 from "../imgs/Home Galeria/imagem2.jpeg";
-import imagem3 from "../imgs/Home Galeria/imagem3.jpeg";
-import imagem4 from "../imgs/Home Galeria/imagem4.jpeg";
-import imagem5 from "../imgs/Home Galeria/imagem5.jpeg";
-import imagem6 from "../imgs/Home Galeria/imagem6.jpeg";
-import imagem7 from "../imgs/Home Galeria/imagem7.jpeg";
-import imagem8 from "../imgs/Home Galeria/imagem8.jpeg";
-import imagem9 from "../imgs/Home Galeria/imagem9.jpeg";
-import imagem10 from "../imgs/Home Galeria/imagem10.jpeg";
-import imagem11 from "../imgs/Home Galeria/imagem11.jpeg";
-import imagem12 from "../imgs/Home Galeria/imagem12.jpeg";
-import imagem13 from "../imgs/Home Galeria/imagem13.jpeg";
-import imagem14 from "../imgs/Home Galeria/imagem14.jpeg";
-import imagem15 from "../imgs/Home Galeria/imagem15.jpeg";
-import imagem16 from "../imgs/Home Galeria/imagem16.jpeg";
-import imagem17 from "../imgs/Home Galeria/imagem17.jpeg";
-import imagem18 from "../imgs/Home Galeria/imagem18.jpeg";
-import imagem19 from "../imgs/Home Galeria/imagem19.jpeg";
-import imagem20 from "../imgs/Home Galeria/imagem20.jpeg";
-import imagem21 from "../imgs/Home Galeria/imagem21.jpeg";
-import imagem22 from "../imgs/Home Galeria/imagem22.jpeg";
-import imagem23 from "../imgs/Home Galeria/imagem23.jpeg";
-import imagem24 from "../imgs/Home Galeria/imagem24.jpeg";
-import imagem25 from "../imgs/Home Galeria/imagem25.jpeg";
-import imagem26 from "../imgs/Home Galeria/imagem26.jpeg";
-import imagem27 from "../imgs/Home Galeria/imagem27.jpeg";
-import imagem28 from "../imgs/Home Galeria/imagem28.jpeg";
-import imagem29 from "../imgs/Home Galeria/imagem29.jpeg";
+import imagem1 from "../imgs/Home Galeria/imagem1.jpg";
+import imagem2 from "../imgs/Home Galeria/imagem2.jpg";
+import imagem3 from "../imgs/Home Galeria/imagem3.jpg";
+import imagem4 from "../imgs/Home Galeria/imagem4.jpg";
+import imagem5 from "../imgs/Home Galeria/imagem5.jpg";
+import imagem6 from "../imgs/Home Galeria/imagem6.jpg";
+import imagem7 from "../imgs/Home Galeria/imagem7.jpg";
+import imagem8 from "../imgs/Home Galeria/imagem8.jpg";
+import imagem9 from "../imgs/Home Galeria/imagem9.jpg";
+import imagem10 from "../imgs/Home Galeria/imagem10.jpg";
+import imagem11 from "../imgs/Home Galeria/imagem11.jpg";
+import imagem12 from "../imgs/Home Galeria/imagem12.jpg";
+import imagem13 from "../imgs/Home Galeria/imagem13.jpg";
+import imagem14 from "../imgs/Home Galeria/imagem14.jpg";
+import imagem15 from "../imgs/Home Galeria/imagem15.jpg";
+import imagem16 from "../imgs/Home Galeria/imagem16.jpg";
+import imagem17 from "../imgs/Home Galeria/imagem17.jpg";
+import imagem18 from "../imgs/Home Galeria/imagem18.jpg";
+import imagem19 from "../imgs/Home Galeria/imagem19.jpg";
+import imagem20 from "../imgs/Home Galeria/imagem20.jpg";
+import imagem21 from "../imgs/Home Galeria/imagem21.jpg";
+import imagem22 from "../imgs/Home Galeria/imagem22.jpg";
+import imagem23 from "../imgs/Home Galeria/imagem23.jpg";
+import imagem24 from "../imgs/Home Galeria/imagem24.jpg";
+import imagem25 from "../imgs/Home Galeria/imagem25.jpg";
+import imagem26 from "../imgs/Home Galeria/imagem26.jpg";
+import imagem27 from "../imgs/Home Galeria/imagem27.jpg";
+import imagem28 from "../imgs/Home Galeria/imagem28.jpg";
+import imagem29 from "../imgs/Home Galeria/imagem29.jpg";
+import imagem30 from "../imgs/Home Galeria/imagem30.jpg";
 
 const home_gallery = [
   {
@@ -141,6 +142,26 @@ const home_gallery = [
   {
     id: 28,
     thumb: imagem28,
+  },
+  {
+    id: 29,
+    thumb: imagem29,
+  },
+  {
+    id: 30,
+    thumb: imagem30,
+  },
+  {
+    id: 1,
+    thumb: imagem1,
+  },
+  {
+    id: 2,
+    thumb: imagem2,
+  },
+  {
+    id: 3,
+    thumb: imagem3,
   },
 ];
 export default home_gallery;

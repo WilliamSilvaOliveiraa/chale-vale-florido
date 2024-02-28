@@ -12,7 +12,7 @@ function Navbar() {
     <header>
       <div className="logo-container">
         <a href="#">
-          <img src={logo} alt="" />
+          <h1 className="logo-text">Logo</h1>
         </a>
       </div>
       <nav ref={navRef}>
