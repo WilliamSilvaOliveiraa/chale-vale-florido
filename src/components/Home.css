@@ -822,6 +822,7 @@ async;
 
 .pics:hover {
   filter: opacity(0.8);
+  cursor: pointer;
 }
 
 .pics img {
@@ -845,6 +846,7 @@ async;
   transform: scale(0);
   overflow: hidden;
   z-index: 999;
+  user-select: none;
 }
 
 .model.open {
@@ -984,7 +986,7 @@ async;
   font-family: "Geometric706Black", sans-serif;
   font-weight: 700;
   font-style: normal;
-  font-size: 1.6vw;
+  font-size: 2.2vw;
   margin-bottom: -0.8vw;
 }
 
@@ -1078,4 +1080,22 @@ async;
   width: 50%;
   pointer-events: none;
   user-select: none;
+}
+
+.setas-geral {
+  display: flex;
+  position: absolute;
+  z-index: 999;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  width: 100%;
+  padding: 0 10%;
+}
+
+.setas-geral svg {
+  cursor: pointer;
+  width: 50px;
+  height: 50x;
+  font-size: 2vw;
 }

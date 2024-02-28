@@ -11,8 +11,8 @@ function Footer() {
   });
 
   const position = {
-    lat: -23.861373072256526,
-    lng: -46.84585721958537,
+    lat: 40.782860353995396,
+    lng: -73.96568491588475,
   };
 
   return (
@@ -20,12 +20,13 @@ function Footer() {
       <div className="footer-content">
         <div className="footer-links">
           <h2>Menu</h2>
-          <a href="#">Início</a>
-          <a href="#">Galeria</a>
-          <a href="#">Contato</a>
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Galley</a>
+          <a href="#">Contact</a>
         </div>
         <div className="footer-links">
-          <h2>Rede Sociais</h2>
+          <h2>Social Network</h2>
           <div id="footer_social_media">
             <a href="#" className="footer-link" id="instagram">
               <FaInstagram></FaInstagram>
@@ -78,9 +79,9 @@ function Footer() {
         </div>
       </div>
       <div id="footer_copyright">
-        <h1>Chalé Vale Florido Copyright 2024</h1> <div className="traço"></div>
+        <h1>Brand Name Copyright 2024</h1> <div className="traço"></div>
         <p className="develop">
-          Desenvolvido por{" "}
+          Developed by{" "}
           <a
             rel="noopener noreferrer"
             href="https://www.williamoliveirasilva.online"

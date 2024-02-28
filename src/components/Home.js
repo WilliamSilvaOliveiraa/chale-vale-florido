@@ -3,36 +3,50 @@ import React, { useState, useEffect, useRef } from "react";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
 import { FaHouseChimney } from "react-icons/fa6";
-import slide1 from "../imgs/slide1.jpeg";
-import slide2 from "../imgs/slide2.jpeg";
-import slide3 from "../imgs/slide3.jpeg";
-import slide4 from "../imgs/slide4.jpeg";
-import { IoClose } from "react-icons/sio5";
+import slide1 from "../imgs/slide1.jpg";
+import slide2 from "../imgs/slide2.jpg";
+import slide3 from "../imgs/slide3.jpg";
+import slide4 from "../imgs/slide4.jpg";
+import slide5 from "../imgs/slide5.jpg";
+import { IoClose } from "react-icons/io5";
 import home_gallery from "./Home_data";
-import slide5 from "../imgs/slide5.jpeg";
-import piscina from "../imgs/piscina.jpeg";
-import espaço from "../imgs/espaço.jpeg";
-import imagemfixa from "../imgs/imagemfixa.jpeg";
-import rooftop from "../imgs/rooftop.jpeg";
-import casal1 from "../imgs/casal1.png";
+import piscina from "../imgs/piscina.jpg";
+import espaço from "../imgs/espaço.jpg";
+import rooftop from "../imgs/rooftop.jpg";
+import pet from "../imgs/pet.jpg";
+import casal1 from "../imgs/casal1.jpg";
 import casal2 from "../imgs/casal2.jpg";
 import casal3 from "../imgs/casal3.jpg";
 import casal4 from "../imgs/casal4.jpg";
-import teste from "../imgs/teste.png";
+import teste from "../imgs/teste.jpg";
 import locaçao from "../imgs/locaçao.jpeg";
-import pet from "../imgs/pet.jpeg";
-import slide6 from "../imgs/slide6.png";
+
 import divisor from "../imgs/divisor.png";
-import logo from "../imgs/logo.png";
 
 function Home() {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const totalImages = home_gallery.length;
   const [model, setModel] = useState(false);
   const [tempthumb, setTempThumb] = useState("");
-  const getImg = (thumb) => {
-    setTempThumb(thumb);
-    setModel(true);
+
+  const nextSlideModal = () => {
+    setCurrentImageIndex((prevIndex) => (prevIndex + 1) % totalImages);
+    setTempThumb(home_gallery[(currentImageIndex + 1) % totalImages]?.thumb);
   };
 
+  const prevSlideModal = () => {
+    setCurrentImageIndex(
+      (prevIndex) => (prevIndex - 1 + totalImages) % totalImages
+    );
+    setTempThumb(
+      home_gallery[(currentImageIndex - 1 + totalImages) % totalImages]?.thumb
+    );
+  };
+  const getImg = (thumb, index) => {
+    setTempThumb(thumb);
+    setCurrentImageIndex(index);
+    setModel(true);
+  };
   const prevSlide = () => {
     const totalSlides = 5;
     setCurrentSlide((prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides);
@@ -68,7 +82,7 @@ function Home() {
       <div className="slider">
         <div className="slider-logo">
           <div className="section-2-title">
-            <h1 id="chale">Name</h1>
+            <h1 id="chale">Brand</h1>
             <h1 id="chale2"> Sub Name</h1>
           </div>
         </div>
@@ -314,7 +328,7 @@ function Home() {
             </p>
 
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div className="section-3-btn">Lorem ipsum</div>
+            <div className="section-3-btn">Button Action</div>
           </div>
         </div>
       </div>
@@ -332,8 +346,8 @@ function Home() {
           <img src={tempthumb} />
           <IoClose className="icon-svg" onClick={() => setModel(false)} />
           <div className="setas-geral">
-            <FaChevronRight />
-            <FaChevronLeft />
+            <FaChevronLeft onClick={prevSlideModal} />
+            <FaChevronRight onClick={nextSlideModal} />
           </div>
         </div>
         <div className="section-4-imgs">
@@ -341,7 +355,7 @@ function Home() {
             <div
               key={item.id}
               className="pics"
-              onClick={() => getImg(item.thumb)}
+              onClick={() => getImg(item.thumb, index)}
             >
               <img loading="lazy" src={item.thumb} alt={item.id} />
             </div>
@@ -349,7 +363,7 @@ function Home() {
         </div>
         <div className="section-4-absolute">
           <div className="section-4-button">
-            <h1>Ver Todas</h1>
+            <h1>View All</h1>
             <FaAngleRight />
           </div>
         </div>
@@ -362,29 +376,38 @@ function Home() {
           <img src={locaçao} />
         </div>
         <div className="section-5-text">
-          <h2>Modalidades De</h2>
-          <h1>Locação</h1>
-          <h3>Day Use</h3>
+          <h2>Promotion</h2>
+          <h1>Section</h1>
+          <h3>First Info</h3>
           <p>
-            Um dia com a gente, com descanso e divesão ao ar livre, em meio à
-            natureza.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod.
           </p>
-          <p>Nosso Day Use funciona de terça-feira a domingo, das 9h às 17h</p>
-          <p>Faça sua reserva antecipada para garantir sua vaga</p>
-          <p>*O Day Use não dá acesso às acomodações dos quartos/chalés</p>
-          <h3>Finais de Semana e Feriados</h3>
           <p>
-            Aproveite a experiencia completa que o chalé Vale Florido pode te
-            oferecer com nosso serviço de hospedagem. Seja para um fim de semana
-            romantico ou uma confraternização familiar, somos a opção perfeita.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod.
           </p>
-          <h3>Eventos Corporativos</h3>
           <p>
-            Temos um espaço ideal para o seu evento! Casamentos, Aniversários,
-            Formaturas, Chá de bebê, Chá de Revelação, confraternização, entre
-            outros.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod.
           </p>
-          <div className="section-5-btn">Faça sua reserva</div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod.
+          </p>
+          <h3>Second Info</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          </p>
+          <h3>Third Info</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim.
+          </p>
+          <div className="section-5-btn">Button Action</div>
         </div>
       </div>
     </div>
