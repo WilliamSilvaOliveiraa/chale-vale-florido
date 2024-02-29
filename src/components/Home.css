@@ -104,7 +104,7 @@ async;
 .manual-navigation {
   position: absolute;
   width: 100%;
-  margin-top: 75vh;
+  margin-top: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,7 +114,7 @@ async;
   position: absolute;
   width: 100%;
 
-  margin-top: 75vh;
+  margin-top: 85vh;
   display: flex;
   justify-content: center;
   gap: 1vw;

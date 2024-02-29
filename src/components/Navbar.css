@@ -10,11 +10,13 @@
 
 .navbar {
   background: transparent;
-  transition: all 0.5s ease;
+  transition: background 0.5s ease; /* Adicione uma transição suave à propriedade background-image */
 }
 
 .solid-background {
-  background: rgb(151, 36, 166);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  background: rgb(78, 76, 77);
 }
 
 * {
@@ -35,8 +37,7 @@ header {
   justify-content: space-between;
   padding: 0 2rem;
   background: transparent;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
-    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
   margin-bottom: 0;
   position: fixed;
   z-index: 999;
@@ -56,14 +57,34 @@ nav a {
   text-decoration: none;
   transition: 0.5s ease;
   font-size: 1vw;
-  width: 100%;
+  width: 5vw;
   font-family: "Raleway", sans-serif;
   font-weight: 600;
+  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-nav a:hover {
-  color: #f594ed;
-  transform: scale(1.02);
+nav a:after {
+  content: "";
+  display: block;
+  position: absolute;
+
+  bottom: -2px;
+
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%; /* Ajuste conforme necessário para a largura do traçado */
+  height: 2px; /* Ajuste conforme necessário para a espessura do traçado */
+  border-radius: 10px;
+  transition: 0.3s ease;
+  background-color: white; /* Cor do traçado */
+}
+
+nav a:hover:after {
+  width: 100%;
 }
 
 header .nav-btn {
@@ -84,13 +105,17 @@ header .nav-btn {
   color: white;
   font-family: "Geometric706Black", sans-serif;
   font-weight: 800;
-  font-size: 2vw;
+  font-size: 1.4vw;
 }
 
 .logo-container img {
   width: 100%;
   height: 100%;
   object-fit: contain;
+}
+
+.logo-container a {
+  text-decoration: none;
 }
 .logo-container {
   display: flex;
@@ -100,8 +125,9 @@ header .nav-btn {
   justify-content: flex-start;
 }
 nav {
-  height: 40%;
+  height: 50%;
   display: flex;
+
   align-items: center;
   justify-content: center;
 }
