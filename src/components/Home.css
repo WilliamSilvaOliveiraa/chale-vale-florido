@@ -1106,3 +1106,70 @@ async;
 .setas-geral svg:hover {
   transform: scale(1.1);
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .section-2-text p {
+    font-size: 1.22vw;
+  }
+  .section-2-text h4 {
+    font-size: 3vw;
+  }
+  .section-2-text-img-img {
+    height: 46vw;
+  }
+
+  .section-2 {
+    padding: 0 5%;
+  }
+  .img-text-preto {
+    height: 25vw;
+  }
+  .section-3-text p {
+    font-size: 1.22vw;
+  }
+
+  .section-3 {
+    padding: 0 5%;
+  }
+
+  .section-3-bottom {
+    height: 46vw;
+  }
+
+  .section-3-text {
+    justify-content: space-between;
+  }
+
+  .section-4 {
+    padding: 0 5%;
+  }
+
+  .section-4-title p {
+    font-size: 1.22vw;
+  }
+
+  .section-4-button {
+    height: 30%;
+    width: 15%;
+  }
+
+  .section-5 {
+    height: 46vw;
+  }
+  .section-5-text {
+    padding: 3vw 5vw 3vw 2vw;
+  }
+
+  .section-5-text p {
+    font-size: 1.22vw;
+  }
+  .section-5-text h3 {
+    font-size: 1.5vw;
+  }
+
+  .section-5-btn {
+    font-size: 1.5vw;
+    height: 3.5vw;
+    width: 35%;
+  }
+}
