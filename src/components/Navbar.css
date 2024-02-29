@@ -142,36 +142,14 @@ nav {
   color: var(--textColor);
 }
 
-@media only screen and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
   header .nav-btn {
-    visibility: visible;
-    opacity: 1;
-    display: block;
   }
   nav a {
-    text-align: center;
-    font-size: 3vw;
+    font-size: 1.3vw;
+    margin: 0 3vw;
   }
-  header nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-    background-color: var(--mainColor);
-    transition: 1s;
-    transform: translateY(-100vh);
-    flex-direction: column-reverse;
-  }
-  header .responsive_nav {
-    transform: none;
-  }
-  .nav-close-btn {
-    display: block;
-    font-size: 3vw;
+  .logo-text {
+    font-size: 1.6vw;
   }
 }

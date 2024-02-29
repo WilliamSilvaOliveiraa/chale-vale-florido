@@ -857,9 +857,9 @@ async;
 }
 
 .model img {
-  width: auto;
-  max-width: 100%;
+  max-width: 60vw;
   height: auto;
+  object-fit: cover;
   display: block;
   line-height: 0;
   box-sizing: border-box;
@@ -1092,13 +1092,13 @@ async;
   justify-content: space-between;
   color: white;
   width: 100%;
-  padding: 0 10%;
+  padding: 0 7%;
 }
 
 .setas-geral svg {
   cursor: pointer;
-  width: 50px;
-  height: 50x;
+  width: 30px;
+  height: 30px;
   font-size: 2vw;
   transition: all 0.3s ease;
 }
@@ -1116,6 +1116,14 @@ async;
   }
   .section-2-text-img-img {
     height: 46vw;
+  }
+  .setas-geral svg {
+    width: 50px;
+    height: 50px;
+  }
+  .icon-svg {
+    width: 50px;
+    height: 50px;
   }
 
   .section-2 {
