@@ -764,7 +764,7 @@ async;
   font-weight: 600;
   color: rgb(255, 255, 255);
   font-size: 1.5vw;
-  background: linear-gradient(to right, rgb(255, 0, 255), rgb(221, 39, 191));
+  background: linear-gradient(to right, rgb(177, 25, 177), rgb(136, 10, 115));
 
   transition: all 0.3s ease;
   cursor: pointer;

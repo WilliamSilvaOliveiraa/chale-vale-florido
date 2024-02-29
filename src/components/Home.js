@@ -56,6 +56,12 @@ function Home() {
   const totalImages = home_gallery.length;
   const [model, setModel] = useState(false);
   const [tempthumb, setTempThumb] = useState("");
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const closeModel = () => {
+    setModel(false);
+    setIsModalOpen(false);
+  };
 
   const nextSlideModal = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % totalImages);
@@ -74,7 +80,9 @@ function Home() {
     setTempThumb(thumb);
     setCurrentImageIndex(index);
     setModel(true);
+    setIsModalOpen(true);
   };
+
   const prevSlide = () => {
     const totalSlides = 5;
     setCurrentSlide((prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides);
@@ -104,7 +112,27 @@ function Home() {
 
     return () => clearInterval(intervalIdRef.current);
   }, [currentSlide]);
+  useEffect(() => {
+    const handleScrollLock = () => {
+      if (isModalOpen) {
+        document.body.style.overflow = "hidden";
+      } else {
+        document.body.style.overflow = "auto";
+      }
+    };
 
+    // Adiciona ou remove a classe ao abrir ou fechar o modal
+    handleScrollLock();
+
+    // Adiciona um ouvinte para ajustar a classe ao abrir ou fechar o modal
+    window.addEventListener("scroll", handleScrollLock);
+
+    // Remove o ouvinte ao desmontar o componente
+    return () => {
+      window.removeEventListener("scroll", handleScrollLock);
+      document.body.style.overflow = "auto"; // Garante que o overflow seja redefinido ao desmontar
+    };
+  }, [isModalOpen]);
   return (
     <div className="main-home">
       <div className="slider">
@@ -372,7 +400,7 @@ function Home() {
         </div>
         <div className={model ? "model open" : "model"}>
           <img loading="lazy" src={tempthumb} />
-          <IoClose className="icon-svg" onClick={() => setModel(false)} />
+          <IoClose className="icon-svg" onClick={closeModel} />
           <div className="setas-geral">
             <FaChevronLeft onClick={prevSlideModal} />
             <FaChevronRight onClick={nextSlideModal} />
