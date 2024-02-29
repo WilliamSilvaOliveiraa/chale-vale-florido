@@ -173,3 +173,28 @@
   text-decoration: none;
   font-weight: 500;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .footer-content {
+    padding: 2rem;
+  }
+  .footer-links h2 {
+    font-size: 1.6vw;
+  }
+  .footer-links p {
+    font-size: 1.4vw;
+  }
+  #footer_social_media .footer-link {
+    height: 3.5vw;
+    width: 3.5vw;
+  }
+  .footer-links {
+    gap: 0.3vw;
+  }
+  #footer_copyright h1 {
+    font-size: 1.22vw;
+  }
+  .develop {
+    font-size: 1.22vw;
+  }
+}
