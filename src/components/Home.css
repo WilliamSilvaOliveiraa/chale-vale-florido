@@ -1432,4 +1432,15 @@ async;
   .main-home {
     padding-bottom: 20vw;
   }
+  .icon-svg {
+    width: 13vw;
+    height: 13vw;
+  }
+  .setas-geral {
+    top: 90%;
+    padding: 0 10%;
+  }
+  .model img {
+    max-width: 100vw;
+  }
 }
