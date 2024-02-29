@@ -45,7 +45,7 @@ function Footer() {
           </div>
         </div>
         <div className="footer-links">
-          <h2>Contato</h2>
+          <h2>Contact</h2>
           <p>+55 (19) 99999-9999</p>
           <p>+55 (19) 99999-9999</p>
           <p>+55 (19) 99999-9999</p>

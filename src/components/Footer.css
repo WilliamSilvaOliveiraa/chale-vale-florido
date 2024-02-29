@@ -197,3 +197,60 @@
     font-size: 1.22vw;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    gap: 10vw;
+    height: 100%;
+  }
+  .footer-links {
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-links h2 {
+    font-size: 7vw;
+    margin-bottom: 5vw;
+  }
+  .footer-links a {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+  #footer_social_media {
+    flex-direction: column;
+  }
+  #footer_social_media .footer-link {
+    height: 15vw;
+    width: 15vw;
+  }
+  #footer_social_media .footer-link svg {
+    font-size: 8vw;
+  }
+  .footer-links p {
+    margin-bottom: 4vw;
+    font-size: 5vw;
+  }
+  .maps-euro {
+    width: 80vw;
+    height: 40vh;
+  }
+  #footer_copyright {
+    height: 15vw;
+    flex-direction: column;
+    padding: 10% 0;
+    gap: 5vw;
+  }
+  #footer_copyright h1 {
+    font-size: 4vw;
+  }
+  .traço {
+    display: none;
+  }
+  .develop {
+    font-size: 4vw;
+  }
+}
