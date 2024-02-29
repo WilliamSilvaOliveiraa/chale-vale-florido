@@ -2,14 +2,6 @@ import { useRef } from "react";
 import React, { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from "react-scroll";
 
 function Navbar() {
   const [scrolling, setScrolling] = useState(false);
