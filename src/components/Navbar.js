@@ -11,14 +11,12 @@ import {
   scroller,
 } from "react-scroll";
 
-import logo from "../imgs/Logo laranja original.png";
-
 function Navbar() {
   const [scrolling, setScrolling] = useState(false);
+  const [scrollDisabled, setScrollDisabled] = useState(false);
 
   const handleScroll = () => {
     if (window.scrollY > 160) {
-      // Ajuste o valor 100 conforme necessário
       setScrolling(true);
     } else {
       setScrolling(false);
@@ -33,9 +31,20 @@ function Navbar() {
   }, []);
 
   const navRef = useRef();
-  const showNavbar = () => {
+
+  const toggleResponsiveNav = () => {
     navRef.current.classList.toggle("responsive_nav");
+    setScrollDisabled(!scrollDisabled);
   };
+
+  useEffect(() => {
+    if (scrollDisabled) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "visible";
+    }
+  }, [scrollDisabled]);
+
   return (
     <header className={`navbar ${scrolling ? "solid-background" : ""}`}>
       <div className="logo-container">
@@ -48,11 +57,11 @@ function Navbar() {
         <a href="#">About</a>
         <a href="#">Gallery</a>
         <a href="#">Contact</a>
-        <button className="nav-close-btn" onClick={showNavbar}>
+        <button className="nav-close-btn" onClick={toggleResponsiveNav}>
           <FaTimes />
         </button>
       </nav>
-      <button className="nav-btn" onClick={showNavbar}>
+      <button className="nav-btn" onClick={toggleResponsiveNav}>
         <FaBars />
       </button>
     </header>
