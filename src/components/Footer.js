@@ -2,6 +2,7 @@ import "./Footer.css";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
 
 function Footer() {
@@ -34,8 +35,12 @@ function Footer() {
             <a href="#" className="footer-link" id="facebook">
               <FaFacebookF></FaFacebookF>
             </a>
+
             <a href="#" className="footer-link" id="whatsapp">
               <FaWhatsapp> </FaWhatsapp>
+            </a>
+            <a href="#" className="footer-link" id="linkedin">
+              <FaLinkedinIn />
             </a>
           </div>
         </div>

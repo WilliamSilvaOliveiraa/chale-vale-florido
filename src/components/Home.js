@@ -20,7 +20,7 @@ import casal2 from "../imgs/casal2.jpg";
 import casal3 from "../imgs/casal3.jpg";
 import casal4 from "../imgs/casal4.jpg";
 import teste from "../imgs/teste.jpg";
-import locaçao from "../imgs/locaçao.jpeg";
+import locaçao from "../imgs/locaçao.jpg";
 
 import divisor from "../imgs/divisor.png";
 
@@ -194,7 +194,7 @@ function Home() {
               </p>{" "}
             </div>
             <div className="layout-preto-texto"></div>
-            <img src={piscina}></img>
+            <img loading="lazy" src={piscina}></img>
           </div>
           <div className="img-text-preto">
             <div className="text-img">
@@ -207,7 +207,7 @@ function Home() {
             </div>
             <div className="layout-preto-texto"></div>
 
-            <img src={espaço}></img>
+            <img loading="lazy" src={espaço}></img>
           </div>
           <div className="img-text-preto">
             <div className="text-img">
@@ -220,7 +220,7 @@ function Home() {
             </div>
             <div className="layout-preto-texto"></div>
 
-            <img src={pet}></img>
+            <img loading="lazy" src={pet}></img>
           </div>
           <div className="img-text-preto">
             <div className="text-img">
@@ -233,7 +233,7 @@ function Home() {
             </div>
             <div className="layout-preto-texto"></div>
 
-            <img src={rooftop}></img>
+            <img loading="lazy" src={rooftop}></img>
           </div>
         </div>
 
@@ -286,25 +286,25 @@ function Home() {
         </div>
       </div>
       <div className="divisor">
-        <img src={divisor} />
+        <img loading="lazy" src={divisor} />
       </div>
       <div className="section-3">
         <div className="section-3-bottom">
           <div className="section-3-imgs">
             <div className="section-3-imgs-top">
               <div className="section-3-img-container" id="image2">
-                <img src={casal1} />
+                <img loading="lazy" src={casal1} />
               </div>
               <div className="section-3-img-container" id="image1">
-                <img src={casal2} />
+                <img loading="lazy" src={casal2} />
               </div>
             </div>
             <div className="section-3-imgs-bottom">
               <div className="section-3-img-container" id="image3">
-                <img src={casal4} />
+                <img loading="lazy" src={casal4} />
               </div>
               <div className="section-3-img-container" id="image4">
-                <img src={casal3} />
+                <img loading="lazy" src={casal3} />
               </div>
             </div>
           </div>
@@ -334,7 +334,7 @@ function Home() {
         </div>
       </div>
       <div className="divisor">
-        <img src={divisor} />
+        <img loading="lazy" src={divisor} />
       </div>
       <div className="section-4">
         <div className="section-4-title">
@@ -344,7 +344,7 @@ function Home() {
           </p>
         </div>
         <div className={model ? "model open" : "model"}>
-          <img src={tempthumb} />
+          <img loading="lazy" src={tempthumb} />
           <IoClose className="icon-svg" onClick={() => setModel(false)} />
           <div className="setas-geral">
             <FaChevronLeft onClick={prevSlideModal} />
@@ -370,11 +370,11 @@ function Home() {
         </div>
       </div>
       <div className="divisor">
-        <img src={divisor} />
+        <img loading="lazy" src={divisor} />
       </div>
       <div className="section-5">
         <div className="section-5-img">
-          <img src={locaçao} />
+          <img loading="lazy" src={locaçao} />
         </div>
         <div className="section-5-text">
           <h2>Promotion</h2>
