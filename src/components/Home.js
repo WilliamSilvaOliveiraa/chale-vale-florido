@@ -20,11 +20,38 @@ import casal2 from "../imgs/casal2.jpg";
 import casal3 from "../imgs/casal3.jpg";
 import casal4 from "../imgs/casal4.jpg";
 import teste from "../imgs/teste.jpg";
+import celularTela from "../imgs/celularTela.jpg";
+import tabletTela from "../imgs/tabletTela.jpg";
 import locaçao from "../imgs/locaçao.jpg";
 
 import divisor from "../imgs/divisor.png";
 
 function Home() {
+  const [imageUrl, setImageUrl] = useState(teste);
+  useEffect(() => {
+    const handleResize = () => {
+      const screenSize = window.innerWidth;
+      if (screenSize <= 767) {
+        setImageUrl(celularTela);
+      } else if (screenSize <= 1023) {
+        setImageUrl(tabletTela);
+      } else {
+        setImageUrl(teste);
+      }
+    };
+
+    // Verifica o tamanho da tela ao iniciar o componente
+    handleResize();
+
+    // Adiciona um ouvinte de redimensionamento para ajustar a imagem conforme o tamanho da tela
+    window.addEventListener("resize", handleResize);
+
+    // Remove o ouvinte ao desmontar o componente
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const totalImages = home_gallery.length;
   const [model, setModel] = useState(false);
@@ -281,7 +308,7 @@ function Home() {
           </div>
           <div
             className="section-2-text-img-img"
-            style={{ backgroundImage: `url(${teste})` }}
+            style={{ backgroundImage: `url(${imageUrl})` }}
           ></div>
         </div>
       </div>

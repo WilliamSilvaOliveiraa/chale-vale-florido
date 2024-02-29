@@ -38,6 +38,8 @@ async;
 .slider {
   margin: 0 auto;
   width: 100%;
+  height: 100%;
+
   box-shadow: rgba(0, 0, 0, 1) 0px 1px 4px;
   overflow: hidden;
   position: relative;
@@ -1179,5 +1181,255 @@ async;
     font-size: 1.5vw;
     height: 3.5vw;
     width: 35%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #chale {
+    font-size: 18vw;
+  }
+  #chale2 {
+    font-size: 10vw;
+  }
+  .seta-unica {
+    font-size: 8vw;
+  }
+  .seta-direita-slide {
+    width: 7vw;
+    height: 7vw;
+    top: 50%;
+    right: 3%;
+  }
+  .seta-esquerda-slide {
+    width: 7vw;
+    height: 7vw;
+    top: 50%;
+    left: 3%;
+  }
+  .section-2-title {
+    margin: 0;
+  }
+  .manual-btn {
+    padding: 1.5vw;
+  }
+  .navigation-auto div {
+    padding: 1.5vw;
+  }
+  .manual-navigation {
+    gap: 3vw;
+  }
+  .navigation-auto {
+    gap: 3vw;
+  }
+  .section-2-imgs {
+    flex-direction: column;
+    gap: 10vw;
+  }
+  .img-text-preto {
+    height: 90vw;
+  }
+  .section-2 {
+    padding: 0 5%;
+  }
+
+  .text-img {
+    padding: 5vw;
+    gap: 3vw;
+  }
+  .text-img h1 {
+    font-size: 6vw;
+    bottom: 0;
+  }
+  .text-img p {
+    opacity: 1;
+    font-size: 5vw;
+    position: relative;
+    padding: 0;
+  }
+  .img-text-preto:hover .text-img h1 {
+    bottom: 0;
+  }
+  .img-text-preto:hover .layout-preto-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.75) 15%,
+      rgba(0, 0, 0, 0.5) 40%,
+      rgba(0, 0, 0, 0.25) 55%,
+      rgba(0, 0, 0, 0) 60%
+    );
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  .img-text-preto:hover img {
+    opacity: 1;
+  }
+  .layout-preto-texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.75) 15%,
+      rgba(0, 0, 0, 0.5) 40%,
+      rgba(0, 0, 0, 0.25) 55%,
+      rgba(0, 0, 0, 0) 60%
+    );
+    z-index: 1;
+    transition: all 0.3s ease;
+  }
+  .section-2-text-img {
+    flex-direction: column;
+  }
+  .section-2-text h4 {
+    font-size: 15vw;
+  }
+  .section-2-text h1 {
+    font-size: 17vw;
+    margin-bottom: 8vw;
+  }
+  .section-2-text p {
+    font-size: 5vw;
+    margin-bottom: 4vw;
+  }
+  #paragrafo1 {
+    margin-bottom: 10vw;
+  }
+  .section-2-text-img-img {
+    height: 60vh;
+  }
+
+  .divisor {
+    width: 90%;
+  }
+  .section-3-bottom {
+    flex-direction: column-reverse;
+    height: 100%;
+    gap: 20vw;
+  }
+  .section-3-text {
+    width: 100%;
+    padding: 0;
+  }
+  #promotion {
+    font-size: 13vw;
+  }
+  #promotion2 {
+    font-size: 17vw;
+  }
+  .section-3-text h2 {
+    font-size: 6vw;
+    margin-bottom: 5vw;
+  }
+  .section-3 {
+    padding: 0 5%;
+  }
+  .section-3-text p {
+    font-size: 5vw;
+    margin-bottom: 5vw;
+  }
+  .section-3-btn {
+    width: 100%;
+    padding: 5%;
+    font-size: 5vw;
+    text-align: center;
+    margin-top: 4vw;
+    border-radius: 50vw;
+  }
+  .section-3-imgs {
+    width: 100%;
+    gap: 3vw;
+  }
+  .section-3-imgs-top {
+    height: 50vw;
+    gap: 3vw;
+  }
+  .section-3-imgs-bottom {
+    height: 80vw;
+    gap: 3vw;
+  }
+
+  #image1 {
+    height: 100%;
+  }
+  .section-4-title h1 {
+    font-size: 6vw;
+    margin-bottom: 2vw;
+  }
+
+  .section-4 {
+    padding: 0 5%;
+    gap: 4vw;
+  }
+  .section-4-title p {
+    font-size: 4vw;
+  }
+
+  .section-4-imgs {
+    columns: 2;
+  }
+  .section-4-absolute {
+    top: 93%;
+    height: 52vw;
+    padding: 0 5%;
+  }
+  .section-4-button {
+    width: 50%;
+    top: 8vw;
+    height: 25%;
+  }
+  .section-4-button h1 {
+    font-size: 5vw;
+  }
+  .section-5 {
+    flex-direction: column;
+  }
+  .section-5-text h2 {
+    font-size: 16vw;
+    width: 100%;
+    text-align: center;
+  }
+  .section-5-text h1 {
+    font-size: 21.5vw;
+    margin-top: -5vw;
+    width: 100%;
+    text-align: center;
+  }
+  .section-5-text h1:after {
+    width: 100%;
+  }
+  .section-5-text h3 {
+    font-size: 7vw;
+    margin-top: 10vw;
+    margin-bottom: 2vw;
+  }
+  .section-5-text {
+    padding: 10vw 5%;
+  }
+  .section-5-text p {
+    font-size: 5vw;
+    margin-bottom: 1vw;
+  }
+  .section-5-btn {
+    width: 100%;
+    height: 15vw;
+    border-radius: 50vw;
+    font-size: 5vw;
+    margin-top: 10vw;
+  }
+  .main-home {
+    padding-bottom: 20vw;
   }
 }
