@@ -72,7 +72,7 @@ function Footer() {
                   onLoad={(marker) => {
                     // Aqui, você pode acessar o objeto Marker e definir estilos adicionais
                     const label = marker.getLabel();
-                    label.color = "#ea4335"; // Define a cor do texto
+                    label.color = "#ea4335";
                     marker.setLabel(label);
                   }}
                 ></Marker>
