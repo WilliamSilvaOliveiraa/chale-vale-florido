@@ -1,5 +1,4 @@
 import "./Home.css";
-
 import React, { useState, useEffect, useRef } from "react";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa";
@@ -23,7 +22,6 @@ import teste from "../imgs/teste.jpg";
 import celularTela from "../imgs/celularTela.jpg";
 import tabletTela from "../imgs/tabletTela.jpg";
 import locaçao from "../imgs/locaçao.jpg";
-
 import divisor from "../imgs/divisor.png";
 
 function Home() {
@@ -51,23 +49,19 @@ function Home() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const totalImages = home_gallery.length;
   const [model, setModel] = useState(false);
   const [tempthumb, setTempThumb] = useState("");
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   const closeModel = () => {
     setModel(false);
     setIsModalOpen(false);
   };
-
   const nextSlideModal = () => {
     setCurrentImageIndex((prevIndex) => (prevIndex + 1) % totalImages);
     setTempThumb(home_gallery[(currentImageIndex + 1) % totalImages]?.thumb);
   };
-
   const prevSlideModal = () => {
     setCurrentImageIndex(
       (prevIndex) => (prevIndex - 1 + totalImages) % totalImages
@@ -82,29 +76,23 @@ function Home() {
     setModel(true);
     setIsModalOpen(true);
   };
-
   const prevSlide = () => {
     const totalSlides = 5;
     setCurrentSlide((prevSlide) => (prevSlide - 1 + totalSlides) % totalSlides);
     resetInterval();
   };
-
   const [currentSlide, setCurrentSlide] = useState(0);
-
   const nextSlide = () => {
     const totalSlides = 5;
     setCurrentSlide((prevSlide) => (prevSlide + 1) % totalSlides);
   };
-
   const intervalIdRef = useRef(null);
-
   const resetInterval = () => {
     clearInterval(intervalIdRef.current);
     intervalIdRef.current = setInterval(() => {
       nextSlide();
     }, 3000);
   };
-
   useEffect(() => {
     intervalIdRef.current = setInterval(() => {
       nextSlide();
@@ -133,6 +121,7 @@ function Home() {
       document.body.style.overflow = "auto"; // Garante que o overflow seja redefinido ao desmontar
     };
   }, [isModalOpen]);
+
   return (
     <div className="main-home">
       <div className="slider">
@@ -239,7 +228,7 @@ function Home() {
       </div>
       <div className="section-2">
         <div className="section-2-imgs">
-          <div className="img-text-preto">
+          <div className="img-text-preto" id="card1">
             <div className="text-img">
               <FaHouseChimney className="icone" />
               <h1> First Info</h1>
@@ -251,7 +240,7 @@ function Home() {
             <div className="layout-preto-texto"></div>
             <img loading="lazy" src={piscina}></img>
           </div>
-          <div className="img-text-preto">
+          <div className="img-text-preto" id="card2">
             <div className="text-img">
               <FaHouseChimney className="icone" />
               <h1 id=""> Second Info </h1>
@@ -264,7 +253,7 @@ function Home() {
 
             <img loading="lazy" src={espaço}></img>
           </div>
-          <div className="img-text-preto">
+          <div className="img-text-preto" id="card3">
             <div className="text-img">
               <FaHouseChimney className="icone" />
               <h1> Third Info </h1>
@@ -277,7 +266,7 @@ function Home() {
 
             <img loading="lazy" src={pet}></img>
           </div>
-          <div className="img-text-preto">
+          <div className="img-text-preto" id="card4">
             <div className="text-img">
               <FaHouseChimney className="icone" />
               <h1 id=""> Fourth Info </h1>
@@ -294,8 +283,8 @@ function Home() {
 
         <div className="section-2-text-img">
           <div className="section-2-text">
-            <h4>Sub Title </h4>
-            <h1>Main Title</h1>
+            <h4 id="sub-title1">Sub Title </h4>
+            <h1 id="title1">Main Title</h1>
             <p id="paragrafo1">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.

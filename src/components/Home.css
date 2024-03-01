@@ -1,20 +1,178 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap")
-async;
-:root {
-  --font-text: "Roboto Mono", monospace;
-  --font-title: "Rubik", sans-serif;
-}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&display=swap");
-
 @font-face {
   font-family: "Geometric706Black";
   src: url("../fonts/PublicaSansRound-Bd.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+@keyframes text-reveal {
+  from {
+    opacity: 0;
+    translate: -10vw 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0;
+  }
+}
+
+@keyframes text-reveal-reverse {
+  from {
+    opacity: 0;
+    translate: 10vw 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0;
+  }
+}
+
+@keyframes text-reveal-p {
+  from {
+    opacity: 0;
+    translate: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    translate: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes image-reveal {
+  from {
+    opacity: 0;
+    translate: 0 0;
+  }
+  to {
+    opacity: 1;
+    translate: 0;
+  }
+}
+
+@keyframes button {
+  from {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes opa {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.section-4-title {
+  animation: opa 1s ease;
+  animation-timeline: view();
+  animation-range: cover 0% cover 20%;
+}
+
+.pics img {
+  animation: text-reveal-p 1s ease;
+  animation-timeline: view();
+  animation-range: cover 0% cover 15%;
+}
+.section-5-text h3 {
+  animation: opa 1s ease;
+  animation-timeline: view();
+  animation-range: cover 0% cover 20%;
+}
+
+.section-3-btn,
+.section-5-btn {
+  animation: button 1s ease;
+  animation-timeline: view();
+  animation-range: cover 0% cover 20%;
+}
+
+p,
+.section-3-text h2 {
+  animation: text-reveal-p 1s ease;
+  animation-timeline: view();
+  animation-range: cover 0% cover 15%;
+}
+
+.section-5-img img {
+  animation: text-reveal 1s ease;
+  animation-timeline: view();
+  animation-range: cover 0% cover 25%;
+}
+
+#title1,
+#promotion2 {
+  animation: text-reveal 1s ease;
+  animation-timeline: view();
+  animation-range: cover 0% cover 20%;
+}
+
+.section-5-text h1 {
+  animation: text-reveal-reverse 1s ease;
+  animation-timeline: view();
+  animation-range: cover 0% cover 15%;
+}
+
+.section-5-text h2 {
+  animation: text-reveal-reverse 1s ease;
+  animation-timeline: view();
+  animation-range: cover 0% cover 10%;
+}
+
+#sub-title1,
+#promotion {
+  animation: text-reveal 1s ease;
+  animation-timeline: view();
+  animation-range: cover 0% cover 10%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    translate: 0 10vw;
+  }
+
+  to {
+    opacity: 1;
+    translate: 0;
+  }
+}
+
+#card1 {
+  animation: appear 1s ease-in-out;
+
+  animation-timeline: view();
+  animation-range: cover 0% cover 10%;
+}
+#card2 {
+  animation: appear 1s ease-in-out;
+  animation-timeline: view();
+  animation-range: cover 0% cover 20%;
+}
+#card3 {
+  animation: appear 1s ease-in-out;
+  animation-timeline: view();
+  animation-range: cover 0% cover 30%;
+}
+#card4 {
+  animation: appear 1s ease-in-out;
+  animation-timeline: view();
+  animation-range: cover 0% cover 40%;
+}
+
+.section-2-imgs {
 }
 
 .main-home {
