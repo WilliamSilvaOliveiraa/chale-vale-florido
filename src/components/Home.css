@@ -1294,14 +1294,15 @@ async;
     flex-direction: column;
   }
   .section-2-text h4 {
-    font-size: 15vw;
+    font-size: 14vw;
   }
   .section-2-text h1 {
-    font-size: 17vw;
+    font-size: 15vw;
     margin-bottom: 8vw;
+    margin-top: -3vw;
   }
   .section-2-text p {
-    font-size: 5vw;
+    font-size: 4vw;
     margin-bottom: 4vw;
   }
   #paragrafo1 {
@@ -1328,16 +1329,17 @@ async;
   }
   #promotion2 {
     font-size: 17vw;
+    margin-top: -3vw;
   }
   .section-3-text h2 {
-    font-size: 6vw;
+    font-size: 5vw;
     margin-bottom: 5vw;
   }
   .section-3 {
     padding: 0 5%;
   }
   .section-3-text p {
-    font-size: 5vw;
+    font-size: 4vw;
     margin-bottom: 5vw;
   }
   .section-3-btn {
@@ -1397,12 +1399,12 @@ async;
     flex-direction: column;
   }
   .section-5-text h2 {
-    font-size: 16vw;
+    font-size: 14vw;
     width: 100%;
     text-align: center;
   }
   .section-5-text h1 {
-    font-size: 21.5vw;
+    font-size: 19vw;
     margin-top: -5vw;
     width: 100%;
     text-align: center;
@@ -1411,7 +1413,7 @@ async;
     width: 100%;
   }
   .section-5-text h3 {
-    font-size: 7vw;
+    font-size: 5vw;
     margin-top: 10vw;
     margin-bottom: 2vw;
   }
@@ -1419,7 +1421,7 @@ async;
     padding: 10vw 5%;
   }
   .section-5-text p {
-    font-size: 5vw;
+    font-size: 4vw;
     margin-bottom: 1vw;
   }
   .section-5-btn {
