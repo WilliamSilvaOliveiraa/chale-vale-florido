@@ -1237,12 +1237,12 @@ async;
     gap: 3vw;
   }
   .text-img h1 {
-    font-size: 6vw;
+    font-size: 5vw;
     bottom: 0;
   }
   .text-img p {
     opacity: 1;
-    font-size: 5vw;
+    font-size: 4vw;
     position: relative;
     padding: 0;
   }
