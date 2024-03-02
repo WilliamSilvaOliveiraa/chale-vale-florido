@@ -11,6 +11,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "GT-Super-Display-Bold-Trial";
+  src: url("../fonts/GT-Super-Display-Bold-Trial.otf") format("truetype");
+  font-weight: normal;
+  font-size: normal;
+}
+
 @keyframes text-reveal {
   from {
     opacity: 0;
@@ -399,7 +406,7 @@ p,
 }
 
 .section-2-title h1 {
-  font-family: "Geometric706Black", sans-serif;
+  font-family: "GT-Super-Display-Bold-Trial", sans-serif;
   font-weight: 800;
   font-size: 5vw;
   background: linear-gradient(
