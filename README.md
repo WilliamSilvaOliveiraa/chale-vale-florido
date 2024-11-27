@@ -29,5 +29,3 @@ O projeto **Simple Landing Page** foi inicialmente criado para uma empresa de lo
 
 4. **Customização Rápida**
    - Fácil modificação de conteúdo e estilo para atender a diferentes necessidades.
-
-```
