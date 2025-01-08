@@ -89,7 +89,7 @@ function Footer() {
           Developed by{" "}
           <a
             rel="noopener noreferrer"
-            href="https://www.williamoliveirasilva.online"
+            href="https://www.williamsilva.dev"
             target="_blank"
             className="nome-Will"
           >
